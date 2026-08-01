@@ -2,9 +2,11 @@
 
 **Kontext:** Bachelorarbeit von Leonie Halser.
 **Leitfrage:** *Welche Strategien nutzen Lehrpersonen der 1.–3. Klasse, um im Kontext von Beurteilung ein Growth Mindset zu fördern?*
-**Stand dieser Beschreibung:** 01.08.2026 · aktueller Netz-Stand: **`wissensnetz-Version_2_05.json`** (129 Knoten, 194 Kanten, 25 Literatur- + 3 Abbildungseinträge) — identisch in `index.html` eingebacken.
+**Stand dieser Beschreibung:** 01.08.2026 · aktueller Netz-Stand: **`wissensnetz-Version_2_08.json`** (129 Knoten, 194 Kanten, 25 Literatur- + 3 Abbildungseinträge) — identisch in `index.html` eingebacken.
 
 > **Hinweis zum GitHub-Repo:** Seit dem Push vom 31.07.2026 enthält das Repo nur noch einen reduzierten Kernbestand (Tool, aktuellster Netz-Stand, README, Rückmeldungsdokument, zwei PDFs). Die vorherige lokale Ordnerstruktur mit nummerierten Zwischenständen (`_1…_12`), HTML-Backups sowie den Ordnern `neue_Quellen/` und `Quellen_GR/` ist **nicht** Teil dieses Repos. Abschnitt 6 (Historie) bleibt als inhaltliches Gedächtnis stehen, auch wenn die dort genannten Einzeldateien hier nicht mehr vorliegen.
+
+> **Link zum Teilen (z. B. an die Betreuerin):** **`https://piculezzas.github.io/Wissensnetz/`** — das ist GitHub Pages, dort läuft das Tool tatsächlich im Browser. Der normale `github.com/piculezzas/Wissensnetz`-Repo-Link zeigt nur Quelltext an, das Tool läuft dort **nicht**. Wichtig: Wer immer diesen Link öffnet, sieht **exakt den zuletzt gepushten/eingebackenen Stand** (aktuell `_2_08`) — nie mehr und nie weniger. Eigene Bearbeitungen im Browser (auch von anderen Personen) landen nur im jeweils eigenen Browser-Speicher und werden dadurch nicht automatisch geteilt; siehe die Warnung in Abschnitt 1 und die Erklärung in Abschnitt 8.
 
 Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es beschreibt alle Dateien, das Tool, das Datenmodell, die Konventionen, die Historie und die offenen Aufgaben.
 
@@ -14,10 +16,10 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 
 1. Repo klonen/pullen (`git clone https://github.com/piculezzas/Wissensnetz.git`) oder den Ordner übertragen — alles Nötige liegt darin, es gibt keine externen Abhängigkeiten.
 2. `index.html` im Browser öffnen (Doppelklick genügt, läuft komplett offline). Der jeweils aktuellste Netz-Stand ist direkt eingebacken, ein Import ist für den reinen Einstieg nicht nötig.
-3. Falls ein anderer/älterer Stand geladen werden soll: oben **«Boards» → «Import»** und die passende JSON-Datei wählen (aktuell: **`wissensnetz-Version_2_05.json`**).
-4. Arbeiten. Vor Schluss: **«Export»** klicken und als nächste Nummer speichern (`wissensnetz-Version_2_06.json` usw.), die Datei in den Ordner legen **und committen/pushen** — das Repo ist die geräteübergreifende Wahrheit.
+3. Falls ein anderer/älterer Stand geladen werden soll: oben **«Boards» → «Import»** und die passende JSON-Datei wählen (aktuell: **`wissensnetz-Version_2_08.json`**).
+4. Arbeiten. Vor Schluss: **«Export»** klicken und als nächste Nummer speichern (`wissensnetz-Version_2_09.json` usw.), die Datei in den Ordner legen **und committen/pushen** — das Repo ist die geräteübergreifende Wahrheit.
 
-> ⚠️ **Wichtig:** Das Tool sichert den Arbeitsstand automatisch im Browser-Speicher (localStorage) — dieser ist aber **gerätespezifisch**. Die JSON-Stände im Git-Repo sind die einzige geräteübergreifende Wahrheit. Deshalb: nach jeder Session exportieren, fortlaufend nummerieren, committen und pushen.
+> ⚠️ **Wichtig:** Das Tool sichert den Arbeitsstand automatisch im Browser-Speicher (localStorage) — dieser ist aber **gerätespezifisch und browserspezifisch**, auch bei der öffentlichen GitHub-Pages-Version (siehe oben). Die JSON-Stände im Git-Repo sind die einzige geräteübergreifende Wahrheit. Deshalb: nach jeder Session exportieren, fortlaufend nummerieren, committen und pushen. Details zum Zusammenspiel HTML/JSON/Browser-Speicher: Abschnitt 8.
 
 ---
 
@@ -27,8 +29,9 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 |---|---|
 | `index.html` | **Das Tool** (interaktives Board, alles inline: JS/CSS/Bilder/Literaturliste), mit dem jeweils aktuellsten Netz-Stand fest eingebacken |
 | `wissensnetz-Version_2_03.json` | Älterer Netz-Stand (128 Knoten, 185 Kanten) |
-| `wissensnetz-Version_2_04.json` | Vorheriger Netz-Stand (129 Knoten, 194 Kanten, 27 Literatureinträge) |
-| `wissensnetz-Version_2_05.json` | **Aktueller Netz-Stand** (129 Knoten, 194 Kanten, 25 Literatur- + 3 Abbildungseinträge) — identisch mit dem in `index.html` eingebackenen Stand |
+| `wissensnetz-Version_2_04.json` | Älterer Netz-Stand (129 Knoten, 194 Kanten, 27 Literatureinträge) |
+| `wissensnetz-Version_2_05.json` | Älterer Netz-Stand (129 Knoten, 194 Kanten, 25 Literatur- + 3 Abbildungseinträge, erste Fassung des bereinigten Literaturverzeichnisses) |
+| `wissensnetz-Version_2_08.json` | **Aktueller Netz-Stand** (129 Knoten, 194 Kanten, 25 Literatur- + 3 Abbildungseinträge, Literaturverzeichnis vollständig auf einheitliches APA-Format geprüft) — identisch mit dem in `index.html` eingebackenen Stand |
 | `Wissensnetz_Version_2_00_Gross.pdf` | Vektor-PDF des Netzes (Stand `_2_00`) in Originalgröße (4714×5055 px) — beliebig zoombar, Text durchsuchbar. ⚠️ nicht mehr inhaltsgleich mit dem aktuellen Stand, siehe Abschnitt 8 zum Neu-Erzeugen |
 | `Überarbeitete_Version_2.pdf` | Überarbeitete Version des Posters/Netzes |
 | `Welche Strategien nutzen Lehrpersonen….pdf` | Ursprüngliches Poster (1:1-Vorlage des Netzes, Stand 11.07.) |
@@ -109,7 +112,8 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 | `Version_2_00` | Meilenstein — inhaltsgleich `_12`, von David als Abschluss der inhaltlichen Runde benannt |
 | `Version_2_03` | Zwischenstand, 31.07.2026 — 128 Knoten, 185 Kanten (Details zu den Schritten zwischen `_2_00` und `_2_03` liegen nicht in diesem Repo vor) |
 | `Version_2_04` | 01.08.2026 — 129 Knoten, 194 Kanten. Neuer Knoten `umsafabfk` (Cluster `bw`): „Kontrollierte Subjektivität" + „Kommunikative Validierung" (Beleg: Lötscher et al., 2023, S. 98). 8 neue pinke Querverbindungen, u. a. LP21-Knoten → Synthese-Strategien S2–S4 sowie GR-Bewertungsrahmen ↔ Bezugsnorm-Box. Reine Erweiterung, nichts entfernt. |
-| **`Version_2_05`** | **aktuell**, 01.08.2026 — Knoten/Kanten unverändert; erste Bearbeitung der Literaturliste direkt im Tool (neuer „Text bearbeiten"-Editor der Literaturbox). Zwei veraltete/doppelte LP21-Einträge sowie die Weisungen-zu-Zeugnissen-Quelle entfernt (letztere war ungenutzt), dafür ein neuer, korrekter LP21-Eintrag ergänzt und per Klammer-Kurztitel `(Lehrplan)` mit den drei LP21-Kästchen verknüpft, die bisher auf keine Quelle zeigten. |
+| `Version_2_05` | 01.08.2026 — Knoten/Kanten unverändert; erste Bearbeitung der Literaturliste direkt im Tool (neuer „Text bearbeiten"-Editor der Literaturbox). Zwei veraltete/doppelte LP21-Einträge sowie die Weisungen-zu-Zeugnissen-Quelle entfernt (letztere war ungenutzt), dafür ein neuer, korrekter LP21-Eintrag ergänzt und per Klammer-Kurztitel `(Lehrplan)` mit den drei LP21-Kästchen verknüpft, die bisher auf keine Quelle zeigten. |
+| **`Version_2_08`** | **aktuell**, 01.08.2026 — Knoten/Kanten weiterhin unverändert; die Autorin hat das gesamte Literaturverzeichnis akribisch durchgesehen und auf einheitliches APA-Format gebracht (Jahr in Klammern nach Autor:in, konsistente Herausgeber-Zitierweise, ergänzte Seitenzahlen/Verlagsorte bei Oser, Sacher, Winter, Wampfler, Mecklenburg, Nölte, Haverkamp). Ausserdem mehrere Kurzbeleg-Korrekturen (u. a. `fb-fuenf1`: „Winter, 2021" → „Winter, 2018", passend zum Literatureintrag). *(Zwischenstände `_2_06`/`_2_07` waren Prüfschritte in derselben Session und wurden nicht separat committet — daher der Sprung in der Nummerierung.)* |
 
 **HTML-Änderungen** (unabhängig von den JSON-Ständen): Shift-Klick-Verbindungs-Fokus inkl. `#link=`-Deep-Link und Sidebar-Hilfetext; Literaturliste erweitert um 4 amtliche Quellen (AVS-Handreichung 2020, EKUD-Weisungen 2025, Schulgesetz 2012, LP21 GR 2016) sowie Ryan & Deci (2019) und Senko & Dawson (2017) — jetzt 29 Einträge; Mehrfachauswahl in der Literaturliste (Cmd-/Shift-Klick); Klick-Fixes (Litliste vom Box-Drag ausgenommen, Litliste auch im Bearbeiten-Modus aktiv); robusteres Zitat-Matching (Ziffern in Quellennamen wie „Lehrplan 21", Klammer-Kurztitel wie „(Schulgesetz)").
 
@@ -133,6 +137,13 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 ---
 
 ## 8. Technische Hinweise
+
+**Wie HTML, JSON und Browser-Speicher zusammenspielen (wichtig für die Zusammenarbeit mit Dritten):**
+- `index.html` ist der Code **plus** einem fest eingebackenen Datenstand (aktuell `_2_08`). Diese Datei ändert sich nur durch einen neuen Commit/Push — nie durchs blosse Arbeiten im Tool.
+- Die `wissensnetz-Version_*.json`-Dateien sind reine, passive Datenschnappschüsse. Sie tun nichts von selbst; sie wirken erst, wenn man sie aktiv über «Boards → Import» lädt.
+- Der Browser-Speicher (localStorage) ist der automatisch gesicherte *Live*-Arbeitsstand. Er gehört zu genau einer Kombination aus Browser + Gerät + Web-Adresse und verlässt diese nie von selbst.
+- **GitHub Pages** (`https://piculezzas.github.io/Wissensnetz/`) macht aus dem Repo eine öffentlich aufrufbare, tatsächlich lauffähige Version des Tools — im Unterschied zum normalen `github.com/…`-Link, der nur den Quelltext als Text anzeigt. Wer den Pages-Link öffnet, sieht immer genau den zuletzt gepushten/eingebackenen Stand von `index.html`, nie mehr.
+- **Keine Echtzeit-Zusammenarbeit:** Jede Person, die den Link öffnet, bekommt einen eigenen, isolierten Browser-Speicher. Bearbeitungen einer Person sind für alle anderen unsichtbar, bis sie explizit exportiert und weitergegeben (bzw. committet) werden. Arbeiten mehrere Personen gleichzeitig am selben Stand, entstehen unabhängige JSON-Exporte, die von Hand zusammengeführt werden müssen — es gibt keinen automatischen Merge. Praxis-Tipp: pro Zeitfenster nur eine Person aktiv bearbeiten lassen, danach exportieren/pushen, bevor die nächste Person weiterarbeitet.
 
 - Die HTML-Datei ist selbstständig (keine Internetverbindung nötig); Gesetzes-/Lehrplan-Server blocken automatisierte Zugriffe, im Browser funktionieren sie normal.
 - **Kurzzitat-Format für klickbare Quellen:** „Nachname (Grossbuchstabe!), Jahr" muss im `cite`-Feld stehen (z. B. „Trautwein & Baeriswyl, 2007, S. 119ff."). Ohne Jahr oder kleingeschrieben greift die Verknüpfung zur Literaturliste nicht.

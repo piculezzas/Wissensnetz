@@ -1,0 +1,2981 @@
+{
+ "version": 1,
+ "savedAt": "2026-08-01T16:30:20.215Z",
+ "nodes": [
+  {
+   "id": "sec-theorie",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 2332,
+   "y": 2050,
+   "w": 321,
+   "h": 58,
+   "label": "Theoretischer Teil",
+   "cluster": "pink"
+  },
+  {
+   "id": "gm-hub",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 2596,
+   "y": 1665,
+   "w": 197,
+   "h": 80,
+   "label": "Growth Mindset Theorie",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-def",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2559,
+   "y": 1751,
+   "w": 303,
+   "h": 99,
+   "text": "Growth Mindset ist eine Theorie von Carol Dweck. Sie unterscheidet zwei grundlegende Formen von Selbstbildern.",
+   "cite": "Dweck, 2016, Kap. 1",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-growth",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3027,
+   "y": 1820,
+   "w": 141,
+   "h": 62,
+   "label": "Growth Mindset",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-growth-def",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2966,
+   "y": 1916,
+   "w": 303,
+   "h": 133,
+   "text": "Beim Growth Mindset / Incremental Theory (auf Deutsch auch „dynamisches Selbstbild\" genannt) gehen Personen davon aus, dass ihre Intelligenz veränderlich und durch Anstrengung entwickelbar ist.",
+   "cite": "Dweck, 2016, Kap. 1",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fixed",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2825,
+   "y": 2070,
+   "w": 141,
+   "h": 62,
+   "label": "Fixed Mindset",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fixed-def",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2749,
+   "y": 2145,
+   "w": 303,
+   "h": 133,
+   "text": "Beim Fixed Mindset / Entity Theory (auf Deutsch auch „statisches Selbstbild\" genannt) gehen Personen davon aus, dass ihre Fähigkeiten angeboren und unveränderlich sind.",
+   "cite": "Dweck, 2016, Kap. 1",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phasen",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 2277,
+   "y": 1911,
+   "w": 197,
+   "h": 62,
+   "label": "Die drei Forschungsphasen",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phase1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1871,
+   "y": 1775,
+   "w": 340,
+   "h": 189,
+   "heading": "Attributions-Ära (1970er)",
+   "text": "Dweck zeigt, dass Kinder, die Misserfolg auf unkontrollierbare Ursachen (Fähigkeit) zurückführen, „hilflos\" reagieren (engl. helpless-reaction), während Kinder, die Misserfolg auf kontrollierbare Ursachen (Anstrengung) zurückführen, „meisterschaftsorientiert\" reagieren (engl. mastery-oriented).",
+   "cite": "Dweck, 2017, S. 139",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phase2",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1871,
+   "y": 1993,
+   "w": 340,
+   "h": 155,
+   "heading": "Ziel-Ära (ab frühe 1980er)",
+   "text": "Mit Elaine Elliott entwickelt Dweck die Unterscheidung zwischen Performance-Zielen (Fähigkeit beweisen) und Lernzielen (Fähigkeit entwickeln) als Erklärung für die unterschiedlichen Reaktionsmuster auf Misserfolg.",
+   "cite": "Dweck, 2017, S. 139f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phase3",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1871,
+   "y": 2165,
+   "w": 340,
+   "h": 138,
+   "heading": "Mindset-Ära (ab Mitte 1980er bis heute)",
+   "text": "Mit Mary Bandura erkennt Dweck, dass hinter den beiden Zielarten unterschiedliche Grundüberzeugungen über die Natur von Fähigkeit stehen: fix vs. entwickelbar.",
+   "cite": "Dweck, 2017, S. 140f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-zentrale",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2154,
+   "y": 1513,
+   "w": 235,
+   "h": 62,
+   "label": "Zentrale Aspekte der Mindset Theorie",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-za1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2406,
+   "y": 1402,
+   "w": 303,
+   "h": 82,
+   "text": "Mindsets sind Teil der Persönlichkeit, aber relativ veränderbar. Sie sind also nicht starr.",
+   "cite": "Dweck, 2017, S. 140",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-za2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2183,
+   "y": 1291,
+   "w": 303,
+   "h": 99,
+   "text": "Mindsets sind domänenspezifisch: Man kann in einem Bereich ein Growth Mindset haben, in einem anderen ein Fixed Mindset.",
+   "cite": "Dweck, 2017, S. 140",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-za3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1864,
+   "y": 1367,
+   "w": 303,
+   "h": 116,
+   "text": "Mindsets lassen sich situativ „verändern\". Eine einzelne Instanz von Personenlob kann kurzfristig ein Fixed Mindset auslösen, ohne das Mindset dauerhaft zu verändern.",
+   "cite": "Dweck, 2017, S. 140",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-uebertragung",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2826,
+   "y": 1447,
+   "w": 298,
+   "h": 62,
+   "label": "Übertragung von Growth Mindset von Lehrpersonen/Eltern auf Kinder",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-uebertragung-def",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2861,
+   "y": 1251,
+   "w": 303,
+   "h": 184,
+   "text": "Lange ging man davon aus, dass Eltern/Lehrpersonen mit einem Growth Mindset dieses automatisch an Kinder weitergeben. Dies wurde aber widerlegt. Das eigene Mindset der Erwachsenen korreliert kaum mit dem Mindset der Kinder. Entscheidend ist nicht die Haltung an sich, sondern das konkrete Verhalten.",
+   "cite": "Haimovitz & Dweck, 2017, S. 1849ff.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-abb1",
+   "tier": "figure",
+   "shape": "figure",
+   "x": 3395,
+   "y": 713,
+   "w": 304,
+   "h": 249,
+   "cite": "Haimovitz & Dweck, 2017, S. 1856",
+   "img": "abb1",
+   "caption": "Abb. 1",
+   "alt": "Wie das Mindset von Erwachsenen auf Kinder wirkt: Child Achievement Event aktiviert Mindset-Überzeugung und Motivationstheorie der Erwachsenen, diese aktivieren person- oder prozessorientierte Praktiken, die Growth- oder Fixed-Mindset beim Kind fördern.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-konkret",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3505,
+   "y": 1093,
+   "w": 222,
+   "h": 44,
+   "label": "Konkretes Verhalten",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-lob1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3486,
+   "y": 1174,
+   "w": 303,
+   "h": 104,
+   "heading": "Lob (Reaktion auf Erfolg)",
+   "text": "Personenbezogenes Lob (z. B. „du bist so schlau\") fördert ein Fixed Mindset.",
+   "cite": "Haimovitz & Dweck, 2017, S. 1851f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-lob2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3478,
+   "y": 1304,
+   "w": 303,
+   "h": 104,
+   "heading": "Lob (Reaktion auf Erfolg)",
+   "text": "Prozessbezogenes Lob (z. B. „du hast hart gearbeitet\") fördert ein Growth Mindset.",
+   "cite": "Haimovitz & Dweck, 2017, S. 1851f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-reaktion-misserfolg",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3478,
+   "y": 1433,
+   "w": 303,
+   "h": 155,
+   "heading": "Reaktion auf Misserfolge/Fehler",
+   "text": "Eltern, die Scheitern als lernförderlich statt lähmend ansehen, reagieren eher mit prozessorientierten statt leistungs-/fähigkeitsbezogenen Reaktionen. Somit fördern sie auch eher ein Growth Mindset.",
+   "cite": "Haimovitz & Dweck, 2017, S. 1852f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-zusammenhang",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2536,
+   "y": 1040,
+   "w": 255,
+   "h": 80,
+   "label": "Zusammenhang zwischen Motivationsmodellen und schulischen Leistungen",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-stichprobe",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2531,
+   "y": 856,
+   "w": 303,
+   "h": 172,
+   "heading": "Stichprobe/Methode",
+   "text": "424 Erst- und Zweitklässler:innen sowie 58 Lehrpersonen wurden über ein Schuljahr zu Mathematikleistungen und Mindset getestet. Lehrpersonen wurden zusätzlich zu eigener Mindset-Haltung und Unterrichtspraxis befragt.",
+   "cite": "Park et al., 2016, S. 300",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-befund1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2896,
+   "y": 519,
+   "w": 303,
+   "h": 138,
+   "heading": "Befund 1",
+   "text": "Schon in der 1./2. Klasse hängen Mindset und Leistung wechselseitig zusammen: Growth Mindset im Herbst sagte höhere Leistungen im Frühling voraus (und umgekehrt).",
+   "cite": "Park et al., 2016, S. 306f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-befund2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2931,
+   "y": 678,
+   "w": 303,
+   "h": 138,
+   "heading": "Befund 2",
+   "text": "Je mehr performance-orientierte Praktiken eine Lehrperson berichtete (z. B. Privilegien für gute Leistungen), desto eher entwickelten die Kinder ein Fixed Mindset.",
+   "cite": "Park et al., 2016, S. 308f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-befund3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2905,
+   "y": 826,
+   "w": 303,
+   "h": 155,
+   "heading": "Befund 3",
+   "text": "Die Mindset-Haltung der Lehrperson sagte das Kindesmindset nicht direkt vorher, sondern nur indirekt über die berichtete Unterrichtspraxis. Nicht die Haltung zählt, sondern das konkrete Unterrichtsverhalten.",
+   "cite": "Park et al., 2016, S. 308f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-soma",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3158,
+   "y": 1561,
+   "w": 146,
+   "h": 44,
+   "label": "SOMA-Modell",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-soma-def",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3064,
+   "y": 1648,
+   "w": 303,
+   "h": 133,
+   "text": "Mindset wirkt nicht direkt auf Leistung (Achievement), sondern indirekt über drei Selbstregulationsprozesse: Zielsetzung (Setting), Zielverfolgung (Operating), Zielüberwachung (Monitoring).",
+   "cite": "Burnette et al., 2013, S. 50ff.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-egothreat",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3473,
+   "y": 1782,
+   "w": 303,
+   "h": 155,
+   "heading": "Ego-Threat",
+   "text": "Mindset-Effekte sind unter Bedrohung des Selbstbilds (z. B. Misserfolgs-Feedback) deutlich stärker als in neutralen Situationen. Beurteilungssituationen sind typische Ego-Threat-Kontexte.",
+   "cite": "Burnette et al., 2013, S. 1ff.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phaenomen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2199,
+   "y": 1001,
+   "w": 239,
+   "h": 62,
+   "label": "Das „Phänomen\" des falschen Growth Mindset",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-phaenomen-intro",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2200,
+   "y": 1070,
+   "w": 303,
+   "h": 99,
+   "text": "Viele Lehrpersonen, die ein Growth Mindset zu vertreten glaubten, setzten es in der Praxis falsch um. Folgende Fehler traten auf:",
+   "cite": "Dweck & Yeager, 2019, S. 14f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fehler1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1767,
+   "y": 852,
+   "w": 303,
+   "h": 99,
+   "text": "Anstrengung loben, auch wenn sie nicht zu Fortschritt führte (statt Strategie/Prozess zu thematisieren).",
+   "cite": "Dweck & Yeager, 2019, S. 14f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fehler2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1766,
+   "y": 1002,
+   "w": 303,
+   "h": 99,
+   "text": "Pauschale „Du kannst alles schaffen\"-Botschaften ohne konkrete Strategien oder Ressourcen.",
+   "cite": "Dweck & Yeager, 2019, S. 14f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fehler3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1766,
+   "y": 1111,
+   "w": 303,
+   "h": 82,
+   "text": "Poster aufhängen oder einmaliger Vortrag, ohne die Praxis zu verändern.",
+   "cite": "Dweck & Yeager, 2019, S. 14f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-fehler4",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1766,
+   "y": 1201,
+   "w": 303,
+   "h": 65,
+   "text": "Leistungsunterschiede komplett ignorieren.",
+   "cite": "Dweck & Yeager, 2019, S. 14f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-wieunterrichten",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1518,
+   "y": 1581,
+   "w": 305,
+   "h": 98,
+   "label": "Wie unterrichten Lehrpersonen mit einem nachgewiesenen Growth Mindset? (Studie ohne Perspektive der SuS)",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-muthu-methode",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1177,
+   "y": 1332,
+   "w": 303,
+   "h": 201,
+   "text": "Muthukrishnan et al. machten eine qualitative Studie mit neun Primarlehrpersonen (Klasse 1–6) aus Pahang, Malaysia. Ausgewählt wurden gezielt Lehrpersonen mit nachgewiesenem eigenem Growth Mindset (Dweck-Skala) und mind. drei Jahren Erfahrung. Datenerhebung mittels halbstrukturierter Interviews, Auswertung durch hybride thematische Analyse.",
+   "cite": "Muthukrishnan et al., 2025, S. 133ff.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-muthu-achteten",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1148,
+   "y": 1556,
+   "w": 303,
+   "h": 172,
+   "heading": "Darauf achteten die Lehrpersonen:",
+   "cite": "Muthukrishnan et al., 2025, S. 136–141",
+   "list": [
+    "1. Eigene Growth Mindset Haltung zeigen.",
+    "2. Prozessorientiert unterrichten",
+    "3. Positiver Umgang mit Fehlern",
+    "4. Explizite Growth Mindset Sprache",
+    "5. Gezielte Herausforderung für alle SuS"
+   ],
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-muthu-diskrepanz",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1305,
+   "y": 1066,
+   "w": 303,
+   "h": 240,
+   "heading": "Diskrepanz: Theorie – Praxis",
+   "text": "Trotz nachgewiesenem eigenem Growth Mindset wichen die Lehrpersonen in der Praxis teils von der reinen Theorie ab: Sie nutzten sowohl kompetitive als auch kooperative Lernziele, kombinierten konstruktivistische mit behavioristischen Methoden (inkl. Belohnungen) und bewerteten Lernprozess und Ergebnis gleichermassen. Die Autor:innen deuten dies als kulturell bedingte Heterogenität.",
+   "cite": "Muthukrishnan et al., 2025, S. 136–141",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-behaviorismus",
+   "tier": "irrelevant",
+   "shape": "rect",
+   "x": 819,
+   "y": 1418,
+   "w": 303,
+   "h": 202,
+   "text": "Der **Behaviorismus** (Watson, Skinner) erklärt kindliche Entwicklung rein durch Konditionierung: Watsons klassische Konditionierung zeigt, wie Verhalten durch Reiz-Reaktions-Kopplung erlernt wird, während Skinners operante Konditionierung Verhalten durch Verstärkung und Bestrafung erklärt. Beide gehen davon aus, dass allein die Umwelt das Verhalten von Kindern formt.",
+   "cite": "Siegler et al., 2021, S. 370f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-zpe",
+   "tier": "irrelevant",
+   "shape": "rect",
+   "x": 899,
+   "y": 1736,
+   "w": 303,
+   "h": 151,
+   "text": "Die **Zone der proximalen Entwicklung** (Wygotski) bezeichnet den Bereich zwischen dem, was ein Kind allein schafft, und dem, was es nur mit Unterstützung schafft. In dieser Zone findet nach Wygotski das eigentliche Lernen statt.",
+   "cite": "Woolfolk, 2014, S. 58",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-erlernen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1938,
+   "y": 1658,
+   "w": 262,
+   "h": 62,
+   "label": "Das Erlernen des Growth Mindset als Lehrperson",
+   "cluster": "gm"
+  },
+  {
+   "id": "gm-seaton",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1526,
+   "y": 1721,
+   "w": 303,
+   "h": 167,
+   "text": "Die Studie von Fiona Seaton (2018) liefert Hinweise darauf, dass Lehrpersonen ihr eigenes Mindset durch ein gezieltes, mehrwöchiges Training nachhaltig verändern können: Der positive Effekt auf das Growth Mindset der Teilnehmenden blieb auch drei Monate nach Trainingsende stabil.",
+   "cite": "Seaton, 2018, S. 55f.",
+   "cluster": "gm"
+  },
+  {
+   "id": "uf-hub",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 949,
+   "y": 2266,
+   "w": 156,
+   "h": 80,
+   "label": "Umgang mit Fehlern",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-negwissen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 730,
+   "y": 2700,
+   "w": 234,
+   "h": 44,
+   "label": "Das „negative Wissen\"",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-negwissen1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 541,
+   "y": 2791,
+   "w": 303,
+   "h": 150,
+   "text": "Negatives Wissen entsteht nur, wenn 3 Schritte durchlaufen werden: 1. erkennen, was falsch ist, 2. verstehen, wie es dazu kam, 3. Möglichkeit zur Korrektur. Fehlt ein Schritt, führt das möglicherweise zum unsinnigen Fehlermachen.",
+   "cite": "Oser, Hascher & Spychiger, 1999, S. 20f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-negwissen2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 853,
+   "y": 2813,
+   "w": 303,
+   "h": 116,
+   "text": "Wissen, was falsch ist, beziehungsweise wissen, was nicht getan werden „darf\", nennt sich „negatives Wissen\". Es ist genau so wichtig wie zu wissen, was richtig ist.",
+   "cite": "Oser, Hascher & Spychiger, 1999, S. 12f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-muster",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 681,
+   "y": 2432,
+   "w": 282,
+   "h": 62,
+   "label": "Typische Unterrichtsmuster im Umgang mit Fehlern",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-muster1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 442,
+   "y": 2288,
+   "w": 303,
+   "h": 104,
+   "heading": "Schwachstellen antizipieren:",
+   "text": "Lehrperson erklärt mögliche Fehlerquellen vorweg.",
+   "cite": "Oser et al., 1999, S. 25f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-muster2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 242,
+   "y": 2407,
+   "w": 303,
+   "h": 121,
+   "heading": "Publikmachen von Fehlern:",
+   "text": "Besprechung vor der Klasse (nur bei gutem Klassenklima lernförderlich, sonst kann es beschämend sein).",
+   "cite": "Oser et al., 1999, S. 26",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-muster3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 442,
+   "y": 2543,
+   "w": 303,
+   "h": 138,
+   "heading": "Bermuda-Dreieck der Fehlerkorrektur:",
+   "text": "Bei Nichtwissen wird direkt eine andere Person aufgerufen. Ursprüngliche Person bleibt mit ihrem Fehler allein → kein Lerneffekt.",
+   "cite": "Oser et al., 1999, S. 26f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-vermischung",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1120,
+   "y": 2416,
+   "w": 273,
+   "h": 80,
+   "label": "Vermischung von Lernsituationen und Leistungssituationen",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-vermischung1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1106,
+   "y": 2512,
+   "w": 303,
+   "h": 201,
+   "text": "Lernsituationen werden zu Leistungssituationen, wenn Lernende befürchten müssen, dass ihre Beiträge bewertet werden oder sie sich blossgestellt fühlen könnten. Diese Vermischung gilt als zentrales Hindernis für eine konstruktive Fehlerkultur: Lernende vermeiden Fehler und beteiligen sich nur bei Sicherheit über die Richtigkeit ihrer Antwort.",
+   "cite": "Meyer, Seidel & Prenzel, 2006, S. 22f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-elemente",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1240,
+   "y": 2184,
+   "w": 341,
+   "h": 80,
+   "label": "Elemente einer positiven Fehlerkultur und Hypothesen über deren Zusammenhangsstrukturen",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-el1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 967,
+   "y": 2056,
+   "w": 303,
+   "h": 82,
+   "text": "Mehr Fehlerkultur = höhere intrinsische Motivation.",
+   "cite": "Oser et al., 1999, S. 31f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-el2",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1133,
+   "y": 1939,
+   "w": 303,
+   "h": 82,
+   "text": "Mehr Fehlerkultur = stärkere internale Attribution bei Erfolg/Misserfolg.",
+   "cite": "Oser et al., 1999, S. 31f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-el3",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1458,
+   "y": 2016,
+   "w": 303,
+   "h": 99,
+   "text": "Je mehr Fehler gemacht werden „dürfen\", desto sicherer ist das Wissen während einer Prüfungssituation.",
+   "cite": "Oser et al., 1999, S. 31f.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-video",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 593,
+   "y": 2120,
+   "w": 305,
+   "h": 62,
+   "label": "Befunde einer Videostudie zur Untersuchung der Fehlerkultur",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-video1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 576,
+   "y": 1954,
+   "w": 340,
+   "h": 150,
+   "text": "In Klassen mit angespannter Atmosphäre und negativer Fehlerreaktion lernten die Schüler:innen eher fremdbestimmt. In Klassen mit entspannter Atmosphäre, in der Fehler in den Unterricht integriert statt sanktioniert wurden, lernten die Schüler:innen eher selbstbestimmt.",
+   "cite": "Meyer et al., 2006, S. 33ff.",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-funktional",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1586,
+   "y": 2292,
+   "w": 207,
+   "h": 62,
+   "label": "Funktionales Fehlerklima",
+   "cluster": "uf"
+  },
+  {
+   "id": "uf-funktional1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1569,
+   "y": 2449,
+   "w": 303,
+   "h": 165,
+   "text": "Ein funktionales Fehlerklima bedeutet, dass Fehler im Unterricht als wichtiger Bestandteil des Lernprozesses wahrgenommen, positiv bewertet und aktiv als Lernchance genutzt werden — sowohl von der Lehrperson als auch von den Lernenden selbst.",
+   "cite": "Oser et al., 2005, zit. nach Steuer, Tulis & Dresel, 2021, S. 356",
+   "cluster": "uf",
+   "heading": ""
+  },
+  {
+   "id": "sec-bewertung",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 2312,
+   "y": 2552,
+   "w": 208,
+   "h": 58,
+   "label": "Beurteilung",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-guete",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1914,
+   "y": 2401,
+   "w": 199,
+   "h": 44,
+   "label": "Gütekriterien",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-guete1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1898,
+   "y": 2461,
+   "w": 235,
+   "h": 112,
+   "cite": "Sacher, 2014, S. 35ff.",
+   "list": [
+    "1. Validität",
+    "2. Reliabilität",
+    "3. Objektivität"
+   ],
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-situationstypen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2543,
+   "y": 2457,
+   "w": 239,
+   "h": 44,
+   "label": "Drei Situationstypen",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-sit1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2589,
+   "y": 2338,
+   "w": 303,
+   "h": 104,
+   "heading": "Bewertungsfreie Lernsituation",
+   "text": "Intensives, ungestörtes Arbeiten. Der Inhalt steht ganz im Mittelpunkt.",
+   "cite": "Winter, 2018, S. 28",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-sit2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2935,
+   "y": 2385,
+   "w": 303,
+   "h": 121,
+   "heading": "Notenfreie bewertete Lernsituation",
+   "text": "Inhalt und Gelerntes werden besprochen und reflektiert, jedoch ohne Note. Das Bewerten liegt auf Sach- und Individualnorm.",
+   "cite": "Winter, 2018, S. 28",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-sit3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2666,
+   "y": 2581,
+   "w": 303,
+   "h": 104,
+   "heading": "Prüfungssituation",
+   "text": "Besondere Situation, in der bewiesen werden soll, was man kann.",
+   "cite": "Winter, 2018, S. 28",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-planung",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3250,
+   "y": 2505,
+   "w": 292,
+   "h": 62,
+   "label": "Planungsschema für Leistungsbeurteilungen",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-planung1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3268,
+   "y": 2258,
+   "w": 303,
+   "h": 235,
+   "text": "Felix Winter stellt ein Schema mit vier zentralen Leitfragen vor:",
+   "cite": "Winter, 2018, S. 24",
+   "list": [
+    "Wozu? – Welchem Zweck soll die Beurteilung dienen?",
+    "Was? – Was ist Gegenstand der Beurteilung?",
+    "Wie? – Mit welchem Verfahren wird die Leistung erhoben?",
+    "Wer? – Wer erhält die Rückmeldung und in welcher Form?"
+   ],
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-portfolios",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 3657,
+   "y": 2040,
+   "w": 292,
+   "h": 44,
+   "label": "Arten von Portfolios",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-portfolios1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 3663,
+   "y": 2093,
+   "w": 303,
+   "h": 116,
+   "text": "Projektportfolios, Kurs-/Fachportfolios, Lern-Entwicklungs-Portfolios, Talentportfolios, Berufswahl-Bewerbungs-Portfolios und standardisierte Portfolios.",
+   "cite": "Winter, 2018, S. 175f.",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-bezugsnormen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2344,
+   "y": 2750,
+   "w": 207,
+   "h": 44,
+   "label": "Drei Bezugsnormen",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-bez1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2341,
+   "y": 2803,
+   "w": 238,
+   "h": 112,
+   "cite": "Sacher, 2014, S. 84f.",
+   "list": [
+    "1. Die soziale Norm",
+    "2. Die kriteriale Norm",
+    "3. Die individuelle Norm"
+   ],
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-bez2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2028,
+   "y": 3002,
+   "w": 303,
+   "h": 150,
+   "text": "Eine Rückmeldung, die sich am individuellen Lernfortschritt statt am Vergleich mit der Gruppe orientiert, wirkt sich positiv auf Lernmotivation, Leistung und Selbsteinschätzung aus — besonders bei schwächeren Schüler:innen.",
+   "cite": "Brügelmann et al., 2006, S. 29f.",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-bez3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1898,
+   "y": 2700,
+   "w": 303,
+   "h": 150,
+   "text": "Schüler:innen, die individuell bezogenes Feedback erhalten, suchen die Gründe für Erfolg und Schwierigkeiten eher bei sich selbst und führen sie eher auf mangelnde Anstrengung als auf fehlende Begabung zurück.",
+   "cite": "Brügelmann et al., 2006, S. 30",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-bez4",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 2060,
+   "y": 3198,
+   "w": 307,
+   "h": 150,
+   "text": "Bei sozialer Bezugsnorm werden Lernfortschritte schwächerer Schüler:innen oft nicht sichtbar, weil sich ihr Rangplatz durch den Lernzuwachs aller kaum verändert (Karawaneneffekt). Das senkt ihre Lernmotivation.",
+   "cite": "Brügelmann et al., 2006, S. 29",
+   "cluster": "fb",
+   "heading": ""
+  },
+  {
+   "id": "bw-notenungeeignet",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1620,
+   "y": 3104,
+   "w": 284,
+   "h": 62,
+   "label": "Noten sind als Rückmeldung ungeeignet",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-nu1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1195,
+   "y": 3248,
+   "w": 303,
+   "h": 116,
+   "text": "Noten sind nur innerhalb der eigenen Klasse vergleichbar. Bei gleicher Testleistung können Schüler:innen je nach Klasse zu den Besten oder Schwächsten zählen.",
+   "cite": "Winter, 2018, S. 61f.",
+   "cluster": "fb",
+   "heading": ""
+  },
+  {
+   "id": "bw-nu2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1593,
+   "y": 3198,
+   "w": 303,
+   "h": 116,
+   "text": "Noten liefern als reine Zahlen keine inhaltliche Information zu Stärken/Schwächen und erfolgen meist zu spät, um lernwirksam zu sein.",
+   "cite": "Winter, 2018, S. 63f.",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-nu3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1565,
+   "y": 2928,
+   "w": 303,
+   "h": 131,
+   "text": "Benotete Prüfungen wirken motivational eher hemmend; Kompetenzerleben, soziale Einbindung und Autonomie fördern nachhaltigere Motivation.",
+   "cite": "Deci & Ryan, 1993, zit. nach Winter 2018, S. 64f.",
+   "cluster": "bw",
+   "heading": ""
+  },
+  {
+   "id": "bw-referenzgruppenfehler",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 1198,
+   "y": 3378,
+   "w": 254,
+   "h": 62,
+   "label": "Referenzgruppenfehler bei Noten",
+   "cluster": "fb"
+  },
+  {
+   "id": "bw-bflpe",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 1642,
+   "y": 3523,
+   "w": 217,
+   "h": 62,
+   "label": "Big Fish Little Pond-Effekt (BFLPE)",
+   "cluster": "fb"
+  },
+  {
+   "id": "bw-bflpe1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 1591,
+   "y": 3603,
+   "w": 303,
+   "h": 138,
+   "text": "Lehrpersonen beurteilen Schülerinnen und Schüler bei gleicher individueller Leistung systematisch unterschiedlich, je nachdem wie leistungsstark die übrige Klasse ist.",
+   "cite": "Trautwein & Baeriswyl, 2007, S. 119",
+   "heading": "Urteilsverzerrung der Lehrperson",
+   "cluster": "fb"
+  },
+  {
+   "id": "bw-notenprobleme",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1457,
+   "y": 2642,
+   "w": 217,
+   "h": 62,
+   "label": "Drei Ebenen des Notenproblems",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-notenprobleme1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1412,
+   "y": 2712,
+   "w": 303,
+   "h": 150,
+   "text": "Kritik an Noten muss drei Ebenen unterscheiden: das Verfahren zur Feststellung der Leistung, die Bezugsnorm zur Bewertung und die Darstellungsform der Rückmeldung. Wer diese Ebenen vermischt, diskutiert am Problem vorbei.",
+   "cite": "Brügelmann et al., 2006, S. 18",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-angstausloeser",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 3436,
+   "y": 2666,
+   "w": 234,
+   "h": 44,
+   "label": "Noten als Angstauslöser",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-angst1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 3398,
+   "y": 2736,
+   "w": 307,
+   "h": 133,
+   "text": "Noten zählen zu den stärksten Angstauslösern bei Kindern. Entscheidend für die emotionale Wirkung ist weniger die Form der Beurteilung als das „Notenklima\" in der Klasse.",
+   "cite": "Brügelmann et al., 2006, S. 33",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-abb2",
+   "tier": "figure",
+   "shape": "figure",
+   "x": 1914,
+   "y": 3644,
+   "w": 254,
+   "h": 344,
+   "cite": "Hattie et al., 2025, S. 85",
+   "img": "abb2",
+   "caption": "Abb. 2",
+   "alt": "Feedback-Thermometer: Wirkstärke unterschiedlicher Feedback-Formen, von Verstärkung und Hinweisen (1,01) bis Feedback aus Tests (-0,09).",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-meritokratie",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3484,
+   "y": 2929,
+   "w": 255,
+   "h": 62,
+   "label": "Meritokratie-Kritik an Leistungsbewertung",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-merit1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3488,
+   "y": 2993,
+   "w": 303,
+   "h": 133,
+   "text": "Schulische Leistungsbeurteilung beruht auf der Annahme individuell zurechenbarer Leistung. Diese ist jedoch immer sozial mitbedingt (Herkunft, Unterstützung, Beziehungen).",
+   "cite": "Wampfler, 2024, S. 34, 37f.",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-merit2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2422,
+   "y": 3827,
+   "w": 303,
+   "h": 116,
+   "text": "Prüfungen dokumentieren Lernprozesse nur unzuverlässig, da Lernprodukte auf die erwartete Bewertung hin optimiert statt aus dem Lernprozess selbst hervorgehen.",
+   "cite": "Mecklenburg & Wampfler, 2024, S. 45f.",
+   "cluster": "fb",
+   "heading": ""
+  },
+  {
+   "id": "bw-teufelskreis",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 3909,
+   "y": 2830,
+   "w": 234,
+   "h": 44,
+   "label": "Teufelskreis",
+   "cluster": "bw"
+  },
+  {
+   "id": "bw-abb3",
+   "tier": "figure",
+   "shape": "figure",
+   "x": 3871,
+   "y": 2887,
+   "w": 316,
+   "h": 310,
+   "cite": "Haverkamp & Schmitz, 2024, S. 54",
+   "img": "abb3",
+   "caption": "Abb. 3",
+   "alt": "Teufelskreis der Prüfungsangst: Stress/Angst/Kontrollverlust, negative Prüfungserfahrung, psychische Belastung, Selbstzweifel.",
+   "cluster": "bw"
+  },
+  {
+   "id": "sec-feedback",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 2815,
+   "y": 2830,
+   "w": 156,
+   "h": 58,
+   "label": "Feedback",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-wirksam1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2731,
+   "y": 2896,
+   "w": 303,
+   "h": 235,
+   "heading": "Wirksames Feedback ist…",
+   "cite": "Hattie et al., 2025, S. 82",
+   "list": [
+    "zielbezogen",
+    "sichtbar/hörbar",
+    "umsetzbar",
+    "benutzerfreundlich",
+    "rechtzeitig",
+    "fortlaufend",
+    "konsistent (orientiert an Kriterien)",
+    "vorwärtsgerichtet"
+   ],
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-bedingungen",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3121,
+   "y": 3017,
+   "w": 232,
+   "h": 62,
+   "label": "Bedingungen für akzeptiertes Feedback",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-bedingungen1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3114,
+   "y": 2876,
+   "w": 303,
+   "h": 133,
+   "text": "Fürsorge (Vertrauensklima), Glaubwürdigkeit (die feedback-gebende Person wird als lernwürdig anerkannt), Klarheit (eindeutige Position, was gelernt werden soll) und Kommunikation (verständliche Vermittlung).",
+   "cite": "Hattie et al., 2025, S. 82",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-trigger",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 3500,
+   "y": 3235,
+   "w": 232,
+   "h": 62,
+   "label": "Trigger, die Feedback blockieren können",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-trigger1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 3464,
+   "y": 3316,
+   "w": 303,
+   "h": 163,
+   "cite": "Hattie et al., 2025, S. 83",
+   "list": [
+    "**Identitäts-Trigger** – das Feedback bedroht das Selbstbild",
+    "**Wahrheits-Trigger** – das Feedback wird als unwahr empfunden",
+    "**Beziehungs-Trigger** – die Beziehung zur feedback-gebenden Person trägt nicht"
+   ],
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-drei-arten",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 3019,
+   "y": 3140,
+   "w": 197,
+   "h": 62,
+   "label": "Drei Arten von Rückmeldungen",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-feedback",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2798,
+   "y": 3220,
+   "w": 303,
+   "h": 87,
+   "heading": "Feedback",
+   "text": "bezieht sich auf den bisherigen Lernweg.",
+   "cite": "Nölte, 2024, S. 91f.",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-feedup",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3179,
+   "y": 3222,
+   "w": 303,
+   "h": 87,
+   "heading": "Feedup",
+   "text": "setzt den aktuellen Stand in Bezug zum Ziel.",
+   "cite": "Nölte, 2024, S. 91f.",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-feedforward",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 3097,
+   "y": 3482,
+   "w": 303,
+   "h": 138,
+   "heading": "Feed-Forward",
+   "text": "gibt konkrete Hinweise zum Erreichen des Ziels. Diese Art von Rückmeldung gilt als effektivste, jedoch fehlt sie beim summativen Assessment.",
+   "cite": "Nölte, 2024, S. 91f.",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-fuenf",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2734,
+   "y": 3505,
+   "w": 210,
+   "h": 80,
+   "label": "Fünf Kriterien für lernförderliches Feedback",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-fuenf1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2685,
+   "y": 3599,
+   "w": 303,
+   "h": 203,
+   "cite": "Winter, 2021, S. 8, zit. nach Nölte, 2024, S. 92",
+   "list": [
+    "1. lenkt die Aufmerksamkeit auf das Lernziel und zeigt Stärken auf",
+    "2. erfolgt noch während des Lernens",
+    "3. bezieht sich auf teilweise Verstandenes",
+    "4. nimmt den Lernenden das Denken nicht ab",
+    "5. dosiert die korrektive Information so, dass sie verarbeitbar bleibt"
+   ],
+   "cluster": "fb",
+   "heading": "",
+   "text": ""
+  },
+  {
+   "id": "fb-keinratschlag",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 1192,
+   "y": 2951,
+   "w": 282,
+   "h": 62,
+   "label": "Feedback ist kein Ratschlag und auch keine Note",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-keinratschlag1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 1193,
+   "y": 3026,
+   "w": 303,
+   "h": 133,
+   "text": "Feedback soll Lernende orientieren, wie sie in ihrem Lernprozess vorankommen können. Es ist kein allgemeiner Ratschlag und keine Note – Noten allein haben kaum Einfluss auf künftiges Lernen.",
+   "cite": "Hattie et al., 2025, S. 82",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-formativ",
+   "tier": "kernthema",
+   "shape": "hex",
+   "x": 2491,
+   "y": 3190,
+   "w": 199,
+   "h": 80,
+   "label": "Formatives vs. summatives Assessment",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-formativ1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 2438,
+   "y": 3280,
+   "w": 303,
+   "h": 167,
+   "text": "**Summatives Assessment** beurteilt Leistung am Ende eines Lernprozesses (z. B. Note nach einer Klausur) und bietet keine Chance mehr zur Verbesserung. **Formatives Assessment** gibt Rückmeldung während des Lernens, damit sie noch genutzt werden kann.",
+   "cite": "Nölte, 2024, S. 91f.",
+   "cluster": "fb"
+  },
+  {
+   "id": "b-bottom",
+   "tier": "banner",
+   "shape": "banner",
+   "x": 1493,
+   "y": 226,
+   "w": 2508,
+   "h": 215,
+   "label": "Welche Strategien nutzen Lehrpersonen der 1.–3. Klasse, um im Kontext von Beurteilung ein Growth Mindset zu fördern?",
+   "cluster": "pink"
+  },
+  {
+   "id": "fb-regler",
+   "tier": "zentral",
+   "shape": "hex",
+   "x": 2319,
+   "y": 3520,
+   "w": 156,
+   "h": 62,
+   "label": "Feedback-Regler",
+   "cluster": "fb"
+  },
+  {
+   "id": "fb-regler1",
+   "tier": "zentral",
+   "shape": "rect",
+   "x": 2237,
+   "y": 3594,
+   "w": 303,
+   "h": 150,
+   "text": "Feedback lässt sich über fünf Dimensionen gestalten, die schrittweise von der Lehrperson an die Lernenden übergeben werden können: Zeitpunkt, Fokus, Feedback-Geber:in (Lehrperson/Peers), Komplexität der Aufgabe und Form der Rückmeldung.",
+   "cite": "Nölte, 2024, S. 93, Abb. 4",
+   "cluster": "fb"
+  },
+  {
+   "id": "litbox",
+   "tier": "lit",
+   "shape": "lit",
+   "x": 4108,
+   "y": 536,
+   "w": 811,
+   "h": 1176,
+   "cluster": "lit"
+  },
+  {
+   "id": "legendbox",
+   "tier": "legend",
+   "shape": "legend",
+   "x": 4127,
+   "y": 279,
+   "w": 240,
+   "h": 203,
+   "cluster": "neutral"
+  },
+  {
+   "id": "syn-hub",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "x": 665,
+   "y": 601,
+   "w": 330,
+   "h": 80,
+   "label": "Synthese: Growth-Mindset-förderliche Beurteilungsstrategien",
+   "cluster": "syn"
+  },
+  {
+   "id": "syn-mech",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 984,
+   "y": 369,
+   "w": 303,
+   "h": 221,
+   "heading": "Wirkmechanismus",
+   "text": "Beurteilungssituationen sind typische Ego-Threat-Kontexte. GM-förderliche Strategien wirken, indem sie diese Bedrohung entschärfen und die Aufmerksamkeit auf kontrollierbare Ursachen (Prozess, Strategie, Fortschritt) lenken. Entscheidend ist das konkrete Verhalten der Lehrperson, nicht ihre Haltung.",
+   "cite": "Burnette et al., 2013; Haimovitz & Dweck, 2017; Park et al., 2016",
+   "cluster": "syn"
+  },
+  {
+   "id": "syn-s1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 401,
+   "y": 239,
+   "w": 303,
+   "h": 256,
+   "heading": "S1 — Prozess- statt performanzorientiert: loben, rückmelden, strukturieren",
+   "text": "Lob und Feedback auf Prozess, Strategie und Fortschritt beziehen statt auf Person oder Fähigkeit — und auf Strukturebene performanzorientierte Praktiken vermeiden (keine Privilegien oder Belohnungen für gute Leistungen, keine Leistungsvergleiche vor der Klasse). Eine Orientierung, zwei Handlungsebenen: Rückmeldeakt und Anreizstrukturen des Unterrichts.",
+   "cite": "Haimovitz & Dweck, 2017; Park et al., 2016; Dweck & Yeager, 2019",
+   "cluster": "syn"
+  },
+  {
+   "id": "syn-s2",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 234,
+   "y": 564,
+   "w": 303,
+   "h": 170,
+   "heading": "S2 — Fehler zu Lernanlässen machen",
+   "text": "Fehler in den Unterricht integrieren statt sanktionieren: negatives Wissen aufbauen (erkennen – verstehen – korrigieren), Beschämung vermeiden, funktionales Fehlerklima pflegen.",
+   "cite": "Oser et al., 1999; Meyer et al., 2006; Steuer et al., 2021",
+   "cluster": "syn"
+  },
+  {
+   "id": "syn-s3",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 554,
+   "y": 875,
+   "w": 303,
+   "h": 190,
+   "heading": "S3 — Individuelle Bezugsnorm priorisieren",
+   "text": "Rückmeldungen am individuellen Lernfortschritt statt am Sozialvergleich orientieren. Das stärkt internale, anstrengungsbezogene Attributionen und macht Fortschritte schwächerer Kinder sichtbar.",
+   "cite": "Brügelmann et al., 2006",
+   "cluster": "syn"
+  },
+  {
+   "id": "syn-s4",
+   "tier": "kernthema",
+   "shape": "rect",
+   "x": 994,
+   "y": 750,
+   "w": 303,
+   "h": 188,
+   "heading": "S4 — Lern- und Leistungssituationen trennen, formativ beurteilen",
+   "text": "Bewertungsfreie Lernsituationen schaffen und Rückmeldung als Feed-Forward während des Lernens geben statt als Note danach. Das reduziert den Ego-Threat der Beurteilungssituation.",
+   "cite": "Winter, 2018; Nölte, 2024; Meyer et al., 2006",
+   "cluster": "syn"
+  },
+  {
+   "id": "gr-lp21-hub",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "cluster": "gr",
+   "x": 541,
+   "y": 3642,
+   "w": 220,
+   "h": 58,
+   "label": "LP21"
+  },
+  {
+   "id": "gr-lp21-arten",
+   "tier": "kernthema",
+   "shape": "rect",
+   "cluster": "gr",
+   "x": 468,
+   "y": 3730,
+   "w": 320,
+   "h": 163,
+   "text": "Der Lehrplan 21 fordert 3 Arten der Beurteilungen.",
+   "list": [
+    "Formative Beurteilung (Prozessbezogen)",
+    "Summative Beurteilung (prozessabschliessend, bilanzierend)",
+    "Prognostische Beurteilung"
+   ],
+   "cite": "Lehrplan 21 GR, 2016",
+   "heading": ""
+  },
+  {
+   "id": "gr-lp21-summativ",
+   "tier": "kernthema",
+   "shape": "rect",
+   "cluster": "gr",
+   "x": 469,
+   "y": 3918,
+   "w": 320,
+   "h": 116,
+   "text": "Summative Beurteilung laut Lehrplan 21: „Summative Beurteilung orientiert sich an den Zielsetzungen des Lehrplans und des Unterrichts.“",
+   "cite": "Lehrplan 21 GR, 2016",
+   "heading": ""
+  },
+  {
+   "id": "gr-lp21-atmosphaere",
+   "tier": "kernthema",
+   "shape": "rect",
+   "cluster": "gr",
+   "x": 480,
+   "y": 4061,
+   "w": 320,
+   "h": 116,
+   "text": "Der Lehrplan 21 setzt eine „Respektvolle, lernförderliche Arbeitsatmosphäre mit einer entsprechenden Kommunikations-, Feedback- und Fehlerkultur“ voraus",
+   "cite": "Lehrplan 21 GR, 2016",
+   "heading": ""
+  },
+  {
+   "id": "gr-vsg-hub",
+   "tier": "uebertitel",
+   "shape": "oval",
+   "cluster": "gr",
+   "x": 929,
+   "y": 3561,
+   "w": 300,
+   "h": 80,
+   "label": "Volksschulgesetz des Kantons Graubünden"
+  },
+  {
+   "id": "gr-vsg1",
+   "tier": "kernthema",
+   "shape": "rect",
+   "cluster": "gr",
+   "x": 911,
+   "y": 3648,
+   "w": 340,
+   "h": 229,
+   "list": [
+    "Regelmässige Beurteilung: Leistung, Lernentwicklung sowie Arbeits- und Sozialverhalten.",
+    "Ende jedes Semesters gibt es ein Zeugnis, ergänzbar durch individuellen Lernbericht (bei SuS mit besonderem Förderbedarf ist es Pflicht).",
+    "In der 1. und 2. Primarklasse kann die Beurteilung durch ein Notenzeugnis, ein Wortzeugnis oder durch eine freie Form vollzogen werden."
+   ],
+   "cite": "Amt für Volksschule und Sport Graubünden, 2026"
+  },
+  {
+   "id": "umsafabfk",
+   "tier": "kernthema",
+   "shape": "rect",
+   "text": "Kontrollierte Subjektivität: Gleichbehandlung, klare Vorgaben, transparente Kriterien.\nKommunikative Validierung: Beurteilung wird mit Lernenden, Eltern und Kollegen besprochen und abgeglichen.",
+   "x": 2227,
+   "y": 2248,
+   "w": 300,
+   "h": 133,
+   "cluster": "bw",
+   "heading": "",
+   "cite": "Lötscher et al., 2023, S. 98"
+  }
+ ],
+ "edges": [
+  {
+   "f": "sec-theorie",
+   "t": "gm-def",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2624
+  },
+  {
+   "f": "sec-theorie",
+   "t": "sec-bewertung",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2458
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "uf-hub",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2392
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "sec-feedback",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2690
+  },
+  {
+   "f": "gm-def",
+   "t": "gm-fixed",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2848
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-phasen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2535
+  },
+  {
+   "f": "gm-phasen",
+   "t": "gm-phase1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2244
+  },
+  {
+   "f": "gm-phasen",
+   "t": "gm-phase2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2244
+  },
+  {
+   "f": "gm-phasen",
+   "t": "gm-phase3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2244
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-zentrale",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2533
+  },
+  {
+   "f": "gm-zentrale",
+   "t": "gm-za3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2201
+  },
+  {
+   "f": "gm-zentrale",
+   "t": "gm-za2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2343
+  },
+  {
+   "f": "gm-zentrale",
+   "t": "gm-za1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2429
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-uebertragung",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2832
+  },
+  {
+   "f": "gm-lob1",
+   "t": "gm-fixed",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3353
+  },
+  {
+   "f": "gm-lob2",
+   "t": "gm-growth",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3383
+  },
+  {
+   "f": "gm-reaktion-misserfolg",
+   "t": "gm-growth",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3383
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-zusammenhang",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2744
+  },
+  {
+   "f": "gm-stichprobe",
+   "t": "gm-befund1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2864
+  },
+  {
+   "f": "gm-stichprobe",
+   "t": "gm-befund2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2912
+  },
+  {
+   "f": "gm-stichprobe",
+   "t": "gm-befund3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2892
+  },
+  {
+   "f": "gm-def",
+   "t": "gm-growth",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2940
+  },
+  {
+   "f": "gm-befund3",
+   "t": "gm-konkret",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3379
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-soma",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2976
+  },
+  {
+   "f": "gm-soma-def",
+   "t": "gm-egothreat",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3420
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-phaenomen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2517
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "gm-fehler1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2135
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "gm-fehler2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2134
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "gm-fehler3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2134
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "gm-fehler4",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2134
+  },
+  {
+   "f": "gm-fehler1",
+   "t": "gm-konkret",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2848
+  },
+  {
+   "f": "gm-konkret",
+   "t": "gm-za1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3158
+  },
+  {
+   "f": "gm-growth-def",
+   "t": "gm-phasen",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2712
+  },
+  {
+   "f": "gm-fixed-def",
+   "t": "gm-phasen",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2731
+  },
+  {
+   "f": "gm-befund2",
+   "t": "gm-fixed-def",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 1533
+  },
+  {
+   "f": "gm-befund1",
+   "t": "gm-growth-def",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2953
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-wieunterrichten",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2210
+  },
+  {
+   "f": "gm-wieunterrichten",
+   "t": "gm-muthu-achteten",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1460
+  },
+  {
+   "f": "gm-muthu-diskrepanz",
+   "t": "gm-phaenomen",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 979
+  },
+  {
+   "f": "gm-muthu-achteten",
+   "t": "gm-muthu-diskrepanz",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1288
+  },
+  {
+   "f": "gm-hub",
+   "t": "gm-erlernen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2398
+  },
+  {
+   "f": "gm-erlernen",
+   "t": "gm-seaton",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1846
+  },
+  {
+   "f": "gm-za1",
+   "t": "gm-seaton",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 1742
+  },
+  {
+   "f": "gm-growth-def",
+   "t": "gm-erlernen",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2515
+  },
+  {
+   "f": "gm-muthu-achteten",
+   "t": "gm-zpe",
+   "k": "red-dash",
+   "dir": "h",
+   "mid": 1173
+  },
+  {
+   "f": "uf-muster",
+   "t": "uf-muster1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 713
+  },
+  {
+   "f": "uf-muster",
+   "t": "uf-muster3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 713
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-negwissen",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2523
+  },
+  {
+   "f": "uf-el2",
+   "t": "gm-phase1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1774
+  },
+  {
+   "f": "uf-el2",
+   "t": "gm-reaktion-misserfolg",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2517
+  },
+  {
+   "f": "gm-egothreat",
+   "t": "sec-bewertung",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2248
+  },
+  {
+   "f": "gm-muthu-achteten",
+   "t": "uf-hub",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1102
+  },
+  {
+   "f": "uf-elemente",
+   "t": "uf-el1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1255
+  },
+  {
+   "f": "uf-elemente",
+   "t": "uf-el3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1520
+  },
+  {
+   "f": "uf-elemente",
+   "t": "uf-el2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1338
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-vermischung",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1113
+  },
+  {
+   "f": "uf-vermischung",
+   "t": "sec-bewertung",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1862
+  },
+  {
+   "f": "uf-video1",
+   "t": "uf-el2",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1025
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-funktional",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1346
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-formativ",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2649
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-drei-arten",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2965
+  },
+  {
+   "f": "fb-feedforward",
+   "t": "fb-formativ1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2859
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-fuenf",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2763
+  },
+  {
+   "f": "uf-muster1",
+   "t": "fb-fuenf1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 3104
+  },
+  {
+   "f": "fb-formativ1",
+   "t": "uf-vermischung1",
+   "k": "pink2",
+   "dir": "h",
+   "mid": 1923
+  },
+  {
+   "f": "fb-fuenf1",
+   "t": "gm-lob1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3356
+  },
+  {
+   "f": "fb-feedforward",
+   "t": "gm-fehler1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2523
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-regler",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2421
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-keinratschlag",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2038
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-bedingungen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3016
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "fb-trigger",
+   "k": "grey",
+   "dir": "v",
+   "mid": 3098
+  },
+  {
+   "f": "fb-wirksam1",
+   "t": "bw-abb2",
+   "k": "grey",
+   "dir": "v",
+   "mid": 3362
+  },
+  {
+   "f": "fb-feedforward",
+   "t": "bw-abb2",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 3500
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-video",
+   "k": "grey",
+   "dir": "h",
+   "mid": 924
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-muster",
+   "k": "grey",
+   "dir": "h",
+   "mid": 956
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-bezugsnormen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2441
+  },
+  {
+   "f": "bw-bez1",
+   "t": "gm-fehler4",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2262
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-guete",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2222
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-situationstypen",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2540
+  },
+  {
+   "f": "bw-bezugsnormen",
+   "t": "bw-sit2",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2682
+  },
+  {
+   "f": "bw-situationstypen",
+   "t": "bw-sit2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2829
+  },
+  {
+   "f": "bw-situationstypen",
+   "t": "bw-sit1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2687
+  },
+  {
+   "f": "bw-situationstypen",
+   "t": "bw-sit3",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2559
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-planung",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2917
+  },
+  {
+   "f": "bw-planung1",
+   "t": "fb-drei-arten",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3371
+  },
+  {
+   "f": "bw-planung1",
+   "t": "bw-portfolios1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3626
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-notenprobleme",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2002
+  },
+  {
+   "f": "bw-notenprobleme1",
+   "t": "bw-bez1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2892
+  },
+  {
+   "f": "bw-notenprobleme1",
+   "t": "fb-wirksam1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2224
+  },
+  {
+   "f": "bw-notenprobleme1",
+   "t": "bw-portfolios1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2572
+  },
+  {
+   "f": "bw-bez1",
+   "t": "bw-bez2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2333
+  },
+  {
+   "f": "bw-bez2",
+   "t": "gm-growth-def",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2522
+  },
+  {
+   "f": "bw-bez2",
+   "t": "bw-bez3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2115
+  },
+  {
+   "f": "bw-bez3",
+   "t": "gm-growth-def",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2576
+  },
+  {
+   "f": "bw-bez1",
+   "t": "bw-bez4",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2342
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-angstausloeser",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2701
+  },
+  {
+   "f": "bw-angst1",
+   "t": "bw-bez1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2836
+  },
+  {
+   "f": "bw-bez4",
+   "t": "bw-bflpe",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1951
+  },
+  {
+   "f": "bw-angstausloeser",
+   "t": "bw-teufelskreis",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3790
+  },
+  {
+   "f": "bw-teufelskreis",
+   "t": "gm-fixed-def",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2520
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-notenungeeignet",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1997
+  },
+  {
+   "f": "bw-notenungeeignet",
+   "t": "fb-drei-arten",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2462
+  },
+  {
+   "f": "bw-bez2",
+   "t": "bw-nu3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1948
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "bw-meritokratie",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2713
+  },
+  {
+   "f": "fb-formativ1",
+   "t": "bw-merit2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2582
+  },
+  {
+   "f": "bw-nu2",
+   "t": "fb-wirksam1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 3187
+  },
+  {
+   "f": "gm-befund3",
+   "t": "gm-uebertragung-def",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3041
+  },
+  {
+   "f": "gm-uebertragung-def",
+   "t": "gm-befund3",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3041
+  },
+  {
+   "f": "bw-bflpe",
+   "t": "bw-referenzgruppenfehler",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1600
+  },
+  {
+   "f": "gm-growth",
+   "t": "gm-growth-def",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3059
+  },
+  {
+   "f": "gm-fixed",
+   "t": "gm-fixed-def",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2947
+  },
+  {
+   "f": "gm-uebertragung",
+   "t": "gm-uebertragung-def",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3001
+  },
+  {
+   "f": "gm-uebertragung-def",
+   "t": "gm-abb1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3305
+  },
+  {
+   "f": "gm-konkret",
+   "t": "gm-lob1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3605
+  },
+  {
+   "f": "gm-konkret",
+   "t": "gm-lob2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3602
+  },
+  {
+   "f": "gm-konkret",
+   "t": "gm-reaktion-misserfolg",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3602
+  },
+  {
+   "f": "gm-zusammenhang",
+   "t": "gm-stichprobe",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2705
+  },
+  {
+   "f": "gm-soma",
+   "t": "gm-soma-def",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3263
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "gm-phaenomen-intro",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2303
+  },
+  {
+   "f": "gm-wieunterrichten",
+   "t": "gm-muthu-methode",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1663
+  },
+  {
+   "f": "uf-negwissen",
+   "t": "uf-negwissen1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 787
+  },
+  {
+   "f": "uf-negwissen",
+   "t": "uf-negwissen2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 909
+  },
+  {
+   "f": "uf-muster",
+   "t": "uf-muster2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 613
+  },
+  {
+   "f": "uf-vermischung",
+   "t": "uf-vermischung1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1249
+  },
+  {
+   "f": "uf-video",
+   "t": "uf-video1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 737
+  },
+  {
+   "f": "uf-funktional",
+   "t": "uf-funktional1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1705
+  },
+  {
+   "f": "bw-guete",
+   "t": "bw-guete1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2005
+  },
+  {
+   "f": "bw-planung",
+   "t": "bw-planung1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3442
+  },
+  {
+   "f": "bw-portfolios",
+   "t": "bw-portfolios1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3808
+  },
+  {
+   "f": "bw-bezugsnormen",
+   "t": "bw-bez1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2443
+  },
+  {
+   "f": "bw-notenungeeignet",
+   "t": "bw-nu1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1559
+  },
+  {
+   "f": "bw-notenungeeignet",
+   "t": "bw-nu2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1767
+  },
+  {
+   "f": "bw-notenungeeignet",
+   "t": "bw-nu3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1744
+  },
+  {
+   "f": "bw-angstausloeser",
+   "t": "bw-angst1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3571
+  },
+  {
+   "f": "bw-meritokratie",
+   "t": "bw-merit1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3600
+  },
+  {
+   "f": "bw-teufelskreis",
+   "t": "bw-abb3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 4044
+  },
+  {
+   "f": "bw-nu1",
+   "t": "bw-referenzgruppenfehler",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1400
+  },
+  {
+   "f": "sec-feedback",
+   "t": "fb-wirksam1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2722
+  },
+  {
+   "f": "fb-bedingungen",
+   "t": "fb-bedingungen1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3226
+  },
+  {
+   "f": "fb-trigger",
+   "t": "fb-trigger1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3634
+  },
+  {
+   "f": "fb-drei-arten",
+   "t": "fb-feedback",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3060
+  },
+  {
+   "f": "fb-drei-arten",
+   "t": "fb-feedup",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3178
+  },
+  {
+   "f": "fb-drei-arten",
+   "t": "fb-feedforward",
+   "k": "grey",
+   "dir": "v",
+   "mid": 3270
+  },
+  {
+   "f": "fb-fuenf",
+   "t": "fb-fuenf1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2862
+  },
+  {
+   "f": "fb-keinratschlag",
+   "t": "fb-keinratschlag1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1324
+  },
+  {
+   "f": "fb-formativ",
+   "t": "fb-formativ1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2616
+  },
+  {
+   "f": "fb-regler",
+   "t": "fb-regler1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 2434
+  },
+  {
+   "f": "syn-hub",
+   "t": "b-bottom",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1297
+  },
+  {
+   "f": "syn-hub",
+   "t": "syn-mech",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1086
+  },
+  {
+   "f": "syn-hub",
+   "t": "syn-s1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 675
+  },
+  {
+   "f": "syn-hub",
+   "t": "syn-s2",
+   "k": "grey",
+   "dir": "h",
+   "mid": 663
+  },
+  {
+   "f": "syn-hub",
+   "t": "syn-s3",
+   "k": "grey",
+   "dir": "h",
+   "mid": 685
+  },
+  {
+   "f": "syn-hub",
+   "t": "syn-s4",
+   "k": "grey",
+   "dir": "h",
+   "mid": 862
+  },
+  {
+   "f": "gm-egothreat",
+   "t": "syn-mech",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2484
+  },
+  {
+   "f": "gm-uebertragung-def",
+   "t": "syn-mech",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2102
+  },
+  {
+   "f": "gm-befund3",
+   "t": "syn-mech",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2162
+  },
+  {
+   "f": "gm-lob2",
+   "t": "syn-s1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2088
+  },
+  {
+   "f": "fb-fuenf1",
+   "t": "syn-s1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 1991
+  },
+  {
+   "f": "uf-funktional1",
+   "t": "syn-s2",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 1698
+  },
+  {
+   "f": "uf-negwissen",
+   "t": "syn-s2",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 643
+  },
+  {
+   "f": "gm-reaktion-misserfolg",
+   "t": "syn-s2",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2136
+  },
+  {
+   "f": "bw-bez2",
+   "t": "syn-s3",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 1994
+  },
+  {
+   "f": "bw-sit1",
+   "t": "syn-s4",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1834
+  },
+  {
+   "f": "fb-formativ1",
+   "t": "syn-s4",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 2214
+  },
+  {
+   "f": "uf-vermischung1",
+   "t": "syn-s4",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1089
+  },
+  {
+   "f": "gm-befund2",
+   "t": "syn-s1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1784
+  },
+  {
+   "f": "gm-phaenomen",
+   "t": "syn-s1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1389
+  },
+  {
+   "f": "gr-vsg-hub",
+   "t": "gr-lp21-hub",
+   "k": "grey",
+   "dir": "h",
+   "mid": 715
+  },
+  {
+   "f": "gr-lp21-hub",
+   "t": "gr-lp21-arten",
+   "k": "grey",
+   "dir": "h",
+   "mid": 465
+  },
+  {
+   "f": "gr-lp21-hub",
+   "t": "gr-lp21-summativ",
+   "k": "grey",
+   "dir": "h",
+   "mid": 465
+  },
+  {
+   "f": "gr-lp21-hub",
+   "t": "gr-lp21-atmosphaere",
+   "k": "grey",
+   "dir": "h",
+   "mid": 465
+  },
+  {
+   "f": "gr-vsg-hub",
+   "t": "gr-vsg1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 980
+  },
+  {
+   "f": "gr-lp21-atmosphaere",
+   "t": "uf-hub",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 805
+  },
+  {
+   "f": "gr-lp21-arten",
+   "t": "fb-formativ1",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1549
+  },
+  {
+   "f": "gr-vsg1",
+   "t": "bw-notenungeeignet",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1510
+  },
+  {
+   "f": "gm-def",
+   "t": "gm-hub",
+   "k": "struct"
+  },
+  {
+   "f": "sec-theorie",
+   "t": "syn-hub",
+   "k": "struct"
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "gr-vsg-hub",
+   "k": "struct"
+  },
+  {
+   "f": "bw-notenprobleme",
+   "t": "bw-notenprobleme1",
+   "k": "struct"
+  },
+  {
+   "f": "bw-bflpe",
+   "t": "bw-referenzgruppenfehler",
+   "k": "struct"
+  },
+  {
+   "f": "gm-uebertragung-def",
+   "t": "gm-konkret",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3319
+  },
+  {
+   "f": "gm-muthu-achteten",
+   "t": "gm-behaviorismus",
+   "k": "red-dash",
+   "dir": "h",
+   "mid": 1081
+  },
+  {
+   "f": "uf-hub",
+   "t": "uf-elemente",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1173
+  },
+  {
+   "f": "bw-bflpe",
+   "t": "bw-bflpe1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 1768
+  },
+  {
+   "f": "fb-keinratschlag1",
+   "t": "bw-notenungeeignet",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 1551
+  },
+  {
+   "f": "bw-planung",
+   "t": "bw-planung1",
+   "k": "grey",
+   "dir": "h",
+   "mid": 3418
+  },
+  {
+   "f": "gm-growth-def",
+   "t": "gm-reaktion-misserfolg",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 3425
+  },
+  {
+   "f": "gr-vsg-hub",
+   "t": "bw-bez1",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 3178
+  },
+  {
+   "f": "sec-bewertung",
+   "t": "gr-vsg-hub",
+   "k": "pink-dash",
+   "dir": "v",
+   "mid": 3085
+  },
+  {
+   "f": "gr-lp21-arten",
+   "t": "syn-s4",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 891
+  },
+  {
+   "f": "gr-lp21-summativ",
+   "t": "syn-s3",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 552
+  },
+  {
+   "f": "gr-lp21-atmosphaere",
+   "t": "syn-s2",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 388
+  },
+  {
+   "f": "gm-phasen",
+   "t": "gm-growth-def",
+   "k": "pink-dash",
+   "dir": "h",
+   "mid": 2712
+  },
+  {
+   "f": "bw-guete",
+   "t": "umsafabfk",
+   "k": "grey",
+   "dir": "v",
+   "mid": 2416
+  }
+ ],
+ "references": [
+  "Amt für Volksschule und Sport Graubünden. (2026). Zeugnis 1./2. Primarklasse. Verfügbar unter: https://www.gr.ch/DE/institutionen/verwaltung/ekud/avs/Schulbetrieb/zeugnis/Seiten/1-2-Primarklasse.aspx. Zugriff am 27. Juni 2026.",
+  "Brügelmann, H. u.a. (2006). Sind Noten nützlich – und nötig? Ziffernzensuren und alternative Formen der Leistungsbeurteilung im empirischen Vergleich. Eine Expertise der Arbeitsgruppe Primarstufe an der Universität Siegen im Auftrag des Grundschulverbands e.V., Frankfurt (Kurzfassung). In H. Bartnitzky, H. Brügelmann, U. Hecker & G. Schönknecht (Hrsg.), Pädagogische Leistungskultur (S. 17–46). Frankfurt am Main: Grundschulverband – Arbeitskreis Grundschule e.V.",
+  "Burnette, J. L., O'Boyle, E. H., VanEpps, E. M., Pollack, J. M. & Finkel, E. J. (2013). Mindsets matter: A meta-analytic review of implicit theories and self-regulation. Psychological Bulletin, 139(5), 655–701. https://doi.org/10.1037/a0029531",
+  "Dweck, C. S. (2016). Selbstbild [E-Book]. München: Piper.",
+  "Dweck, C. S. (2017). The journey to children's mindsets—and beyond. Child Development Perspectives, 11(2), 139–144. https://doi.org/10.1111/cdep.12225",
+  "Dweck, C. S. & Yeager, D. S. (2019). Mindsets: A view from two eras. Perspectives on Psychological Science, 14(3), 481–496.",
+  "Erziehungs-, Kultur- und Umweltschutzdepartement Graubünden. (2016). Lehrplan 21 Graubünden (Lehrplan). Verfügbar unter: https://gr-d.lehrplan.ch/index.php. Zugriff am 12. Juli 2026.",
+  "Haimovitz, K. & Dweck, C. S. (2017). The origins of children's growth and fixed mindsets: New research and a new proposal. Child Development, 88(6), 1849–1859. https://doi.org/10.1111/cdev.12955",
+  "Hattie, J., Fisher, D., Frey, N. & Almarode, J. (2025). Illustrierter Leitfaden: Lehren und Lernen sichtbar machen. Schule und Unterricht lernwirksam gestalten – Einführung (deutschsprachige Ausgabe von H. Bestvater & W. Beywl). Baltmannsweiler/Bielefeld: Schneider Verlag Hohengehren/wbv Media.",
+  "Haverkamp, H. & Schmitz, J. (2024). Psychische Gesundheit und Prüfungskultur. In P. Wampfler, R. Dreier, C. Albrecht & A. Langela-Bickenbach (Hrsg.), Wege zu einer zeitgemässen Prüfungskultur: Grundlagen und Praxisbeispiele (S. 51–56). Weinheim: Beltz.",
+  "Lötscher, H., Naas, M. & Roos, M. (Hrsg.). (2023). Kompetenzorientiert beurteilen (2. Aufl.). hep Verlag. https://doi.org/10.36933/9783035522723",
+  "Mecklenburg, L. & Wampfler, P. (2024). Von der Schwierigkeit, mit Prüfungen zu messen. In P. Wampfler, R. Dreier, C. Albrecht & A. Langela-Bickenbach (Hrsg.), Wege zu einer zeitgemässen Prüfungskultur: Grundlagen und Praxisbeispiele (S. 43–47). Weinheim: Beltz.",
+  "Meyer, L., Seidel, T. & Prenzel, M. (2006). Wenn Lernsituationen zu Leistungssituationen werden: Untersuchung zur Fehlerkultur in einer Videostudie. Schweizerische Zeitschrift für Bildungswissenschaften, 28(1), 21–41.",
+  "Muthukrishnan, P., Salim, E. J. H., Loo, F. L., Thang, S. M., Sukumaran, S. N. & Lum, M. Y. (2025). Pedagogical practices for developing a growth mindset: A qualitative study with primary school teachers. Educational Psychology in Practice, 41(2), 129–149.",
+  "Nölte, B. (2024). Feedback und formatives Assessment. In P. Wampfler, R. Dreier, C. Albrecht & A. Langela-Bickenbach (Hrsg.), Wege zu einer zeitgemässen Prüfungskultur: Grundlagen und Praxisbeispiele (S. 91–97). Weinheim: Beltz.",
+  "Oser, F., Hascher, T. & Spychiger, M. (1999). Lernen aus Fehlern. Zur Psychologie des „negativen\" Wissens. In W. Althof (Hrsg.), Fehlerwelten. Vom Fehlermachen und Lernen aus Fehlern (S. 11–41). Opladen: Leske + Budrich.",
+  "Park, D., Gunderson, E. A., Tsukayama, E., Levine, S. C. & Beilock, S. L. (2016). Young children's motivational frameworks and math achievement: Relation to teacher-reported instructional practices, but not teacher theory of intelligence. Journal of Educational Psychology, 108(3), 300–313. https://doi.org/10.1037/edu0000064",
+  "Sacher, W. (2014). Leistungen entwickeln, überprüfen und beurteilen: bewährte und neue Wege für die Primar- und Sekundarstufe (6., überarb. und erw. Aufl.). Bad Heilbrunn: Verlag Julius Klinkhardt.",
+  "Seaton, F. S. (2018). Empowering teachers to implement a growth mindset. Educational Psychology in Practice, 34(1), 41–57.",
+  "Siegler, R., Saffran, J. R., Gershoff, E. T. & Eisenberg, N. (2021). Entwicklungspsychologie im Kindes- und Jugendalter (5. Aufl.; S. Pauen, Bearb.). Berlin: Springer.",
+  "Steuer, G., Tulis, M. & Dresel, M. (2021). Is dealing with errors in the classroom specific for school subjects? A study of the error climate in mathematics, German, and English. European Journal of Psychology of Education, 37, 355–373.",
+  "Trautwein, U. & Baeriswyl, F. (2007). Wenn leistungsstarke Klassenkameraden ein Nachteil sind: Referenzgruppeneffekte bei Übertrittsentscheidungen. Zeitschrift für Pädagogische Psychologie, 21(2), 119–133.",
+  "Wampfler, P. (2024). Meritokratie und individuelle Leistung als Märchen für Erwachsene. In P. Wampfler, R. Dreier, C. Albrecht & A. Langela-Bickenbach (Hrsg.), Wege zu einer zeitgemässen Prüfungskultur: Grundlagen und Praxisbeispiele (S. 34–38). Weinheim: Beltz.",
+  "Winter, F. (2018). Lerndialog statt Noten: Neue Formen der Leistungsbeurteilung (2., überarb. und ill. Aufl.). Weinheim: Beltz.",
+  "Woolfolk, A. (2014). Pädagogische Psychologie (12., aktualisierte Aufl.; U. Schönpflug, Bearb. & Übers.). München: Pearson."
+ ],
+ "figures": [
+  "Abbildung 1: Hypothesized model for how adults socialize children's growth and fixed mindsets (Haimovitz & Dweck, 2017, S. 1856).",
+  "Abbildung 2: Effektstärken verschiedener Feedbackformen (Hattie et al., 2025, S. 85).",
+  "Abbildung 3: Zusammenhang zwischen negativen Prüfungserfahrungen und psychischer Belastung (Haverkamp & Schmitz, 2024, S. 54)."
+ ]
+}
