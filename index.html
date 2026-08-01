@@ -250,6 +250,8 @@
   body.edit-mode .edit-tools { display: flex; }
   body.view-only #editToggle, body.view-only #boardsToggle,
   body.view-only #editHintBlock, body.view-only .edit-only-text { display: none !important; }
+  .view-only-text { display: none; }
+  body.view-only .view-only-text { display: revert; }
   .edit-tools select {
     font-family: var(--font-body); font-size: .8rem; color: var(--ink);
     background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; padding: 5px 6px;
@@ -492,7 +494,10 @@
 <header>
   <div>
     <h1>Wissensnetz — Growth Mindset &amp; Beurteilung</h1>
-    <div class="subtitle">Layout 1:1 aus dem Original-PDF · Boxen frei verschiebbar</div>
+    <div class="subtitle">
+      <span class="view-only-text">Interaktive Übersicht zur Bachelorarbeit von Leonie Halser (PH Graubünden) — anklicken zum Erkunden</span>
+      <span class="edit-only-text">Layout 1:1 aus dem Original-PDF · Boxen frei verschiebbar</span>
+    </div>
   </div>
   <div class="header-controls">
     <div class="search-box">
@@ -521,6 +526,8 @@
 
 <div class="layout">
   <aside id="sidebar">
+    <p class="hint view-only-text">Dieses Wissensnetz zeigt die theoretische und empirische Argumentationsstruktur der Bachelorarbeit <em>„Welche Strategien nutzen Lehrpersonen der 1.–3. Klasse, um im Kontext von Beurteilung ein Growth Mindset zu fördern?"</em> (Leonie Halser, PH Graubünden). Anklicken, um Themen, Herleitungsketten und Belege zu erkunden — alle Möglichkeiten unter «Interaktion» weiter unten.</p>
+
     <h2>Formlegende</h2>
     <div class="legend-row toggle" data-form="oval" role="button" tabindex="0"><span class="swatch swatch-oval"></span>Themen</div>
     <div class="legend-row toggle" data-form="hex" role="button" tabindex="0"><span class="swatch swatch-hex"></span>Unterthema</div>
@@ -533,17 +540,17 @@
     <div class="legend-row toggle" data-kinds="pink-dash,pink2" role="button" tabindex="0"><span class="line-sample pink"></span>Querverweis</div>
     <div class="legend-row toggle" data-kinds="red-dash" role="button" tabindex="0"><span class="line-sample red"></span>Hintergrundtheorie-Bezug</div>
 
-    <h2>Zonen</h2>
+    <h2>Zonen <span style="font-weight:400;text-transform:none;letter-spacing:0">(Klick = hinspringen)</span></h2>
     <div class="jump-list">
-      <button data-jump="gm-hub">Growth Mindset Theorie</button>
-      <button data-jump="uf-hub">Umgang mit Fehlern</button>
-      <button data-jump="sec-theorie">Theoretischer Teil</button>
-      <button data-jump="sec-bewertung">Bewertungen</button>
-      <button data-jump="sec-feedback">Feedback</button>
+      <button data-jump="b-bottom">Leitfrage</button>
       <button data-jump="syn-hub">Synthese-Strategien</button>
-      <button data-jump="gr-vsg-hub">Volksschulgesetz GR</button>
-      <button data-jump="gr-lp21-hub">LP21</button>
-      <button data-jump="b-bottom">Forschungsfrage</button>
+      <button data-jump="sec-theorie">Theoretischer Teil</button>
+      <button data-jump="gm-hub">↳ Growth Mindset Theorie</button>
+      <button data-jump="uf-hub">↳ Umgang mit Fehlern</button>
+      <button data-jump="sec-bewertung">Beurteilung</button>
+      <button data-jump="sec-feedback">Feedback</button>
+      <button data-jump="gr-vsg-hub">Kanton GR: Volksschulgesetz</button>
+      <button data-jump="gr-lp21-hub">Kanton GR: Lehrplan 21</button>
       <button data-jump="litbox">Literaturverzeichnis</button>
     </div>
 
@@ -705,12 +712,18 @@
 (function(){
   "use strict";
 
-  /* Ansichtsversion ohne Bearbeitungs-/Boards-Funktionen (Link für Dritte,
-     z. B. Betreuungspersonen): "?view=1" in der URL blendet «Bearbeiten»
-     und «Boards» aus und deaktiviert das Verschieben von Boxen per Drag.
+  /* Ansichtsversion ohne Bearbeitungs-/Boards-Funktionen ist der DEFAULT für
+     online geteilte Links (sicher für Dritte, z. B. Betreuungspersonen —
+     auch ein versehentlich verkürzter Link landet so nie im
+     Bearbeitungsmodus). "?edit=1" in der URL schaltet «Bearbeiten» und
+     «Boards» frei. Lokal geöffnete Dateien (file://, z. B. Doppelklick auf
+     index.html) sind davon ausgenommen und bleiben ohne Parameter voll
+     editierbar — das ist der bisherige, unveränderte Arbeits-Workflow.
      Kein Sicherheitsmechanismus, nur eine UI-Vereinfachung — alle
-     Anzeige-/Highlight-/Filter-Funktionen bleiben vollständig erhalten. */
-  const VIEW_ONLY = new URLSearchParams(location.search).get('view') === '1';
+     Anzeige-/Highlight-/Filter-Funktionen bleiben in beiden Varianten
+     vollständig erhalten. */
+  const VIEW_ONLY = location.protocol !== 'file:' &&
+    new URLSearchParams(location.search).get('edit') !== '1';
   if (VIEW_ONLY) document.body.classList.add('view-only');
 
   /* ============================= DATA ============================= */
