@@ -451,8 +451,10 @@
   .shape-lit li:hover { background: rgba(128,128,128,.16); }
   .shape-lit li.sel { background: var(--accent-soft); outline: 2px solid var(--accent); }
   .ref-count { font-family: var(--font-mono); font-size: .6rem; opacity: .75; margin-left: 6px; white-space: nowrap; }
+  body.hide-ref-counts .ref-count { display: none; }
   button.lit-edit-btn { display: none; width: 100%; justify-content: center; margin-bottom: 12px; }
   body.edit-mode button.lit-edit-btn { display: flex; }
+  button.lit-count-btn { width: 100%; justify-content: center; margin-bottom: 12px; }
   #litPanel li { cursor: pointer; border-radius: 6px; padding: 3px 6px; }
   #litPanel li:hover { background: var(--accent-soft); }
   #litPanel li.sel { background: var(--accent-soft); outline: 2px solid var(--accent); }
@@ -757,6 +759,27 @@
   const WORK_KEY = 'wissensnetz-gm-working-v1';       // full auto-saved document
   const BOARDS_KEY = 'wissensnetz-gm-boards-v1';      // named snapshots
 
+  // Display-only preference (not part of the board/JSON content): whether the
+  // "→ n× im Netz" occurrence counts show next to literature entries. Shown by
+  // default (useful while working); toggle off before printing/submitting,
+  // since it doesn't belong in a real bibliography. Kept per-browser via
+  // localStorage, independent of boards/exports.
+  const REFCOUNT_KEY = 'wissensnetz-gm-show-refcounts';
+  let showRefCounts = true;
+  try { const v = localStorage.getItem(REFCOUNT_KEY); if (v !== null) showRefCounts = v === '1'; } catch (e) {}
+  function applyRefCountVisibility() {
+    document.body.classList.toggle('hide-ref-counts', !showRefCounts);
+  }
+  function toggleRefCounts() {
+    showRefCounts = !showRefCounts;
+    try { localStorage.setItem(REFCOUNT_KEY, showRefCounts ? '1' : '0'); } catch (e) {}
+    applyRefCountVisibility();
+    document.querySelectorAll('.lit-count-btn').forEach(btn => {
+      btn.textContent = showRefCounts ? '🔢 Vorkommen ausblenden' : '🔢 Vorkommen einblenden';
+    });
+  }
+  applyRefCountVisibility();
+
   /* ============================= HELPERS ============================= */
 
   function escapeHtml(s) {
@@ -807,7 +830,9 @@
         <div class="legend-row"><span class="swatch swatch-rect-dotted"></span>Zusätzliche Literatur (nicht zentral)</div>`;
     }
     if (n.shape === 'lit') {
+      const countLabel = showRefCounts ? '🔢 Vorkommen ausblenden' : '🔢 Vorkommen einblenden';
       return '<button type="button" class="chip lit-edit-btn" data-action="edit-lit">✎ Text bearbeiten</button>' +
+             `<button type="button" class="chip lit-count-btn" data-action="toggle-refcount">${countLabel}</button>` +
              '<h3>Literaturverzeichnis</h3><ul>' + REFERENCES.map((r, i) => `<li data-ref="${i}">${escapeHtml(r)}<span class="ref-count"></span></li>`).join('') + '</ul>' +
              '<h3>Abbildungsverzeichnis</h3><ul>' + FIGURES.map((f, i) => `<li data-abb="${i}">${escapeHtml(f)}</li>`).join('') + '</ul>';
     }
@@ -1513,6 +1538,7 @@
   world.addEventListener('click', (e) => {
     if (suppressClick) return;
     if (e.target.id === 'bendHandle') return;
+    if (e.target.closest('.lit-count-btn')) { toggleRefCounts(); return; }
 
     if (editMode) {
       const hit = e.target.closest && e.target.closest('path.edge-hit');
@@ -2241,6 +2267,7 @@
     // sonst schluckt ein 5px-Wackler des Trackpads den Klick.
     if (e.target.closest('.shape-lit li')) return;
     if (e.target.closest('.lit-edit-btn')) return;
+    if (e.target.closest('.lit-count-btn')) return;
     const id = nodeEl.dataset.id;
     const rec = nodesById[id];
     capturePointer(nodeEl, e);
