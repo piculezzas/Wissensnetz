@@ -2,7 +2,9 @@
 
 **Kontext:** Bachelorarbeit von Leonie Halser.
 **Leitfrage:** *Welche Strategien nutzen Lehrpersonen der 1.–3. Klasse, um im Kontext von Beurteilung ein Growth Mindset zu fördern?*
-**Stand dieser Beschreibung:** 18.07.2026 · aktueller Netz-Stand: **`wissensnetz-Version_2_00.json`** (= Meilenstein, inhaltsgleich mit `_12`; 146 Knoten, 226 Kanten)
+**Stand dieser Beschreibung:** 01.08.2026 · aktueller Netz-Stand: **`wissensnetz-Version_2_04.json`** (129 Knoten, 194 Kanten) — identisch in `index.html` eingebacken.
+
+> **Hinweis zum GitHub-Repo:** Seit dem Push vom 31.07.2026 enthält das Repo nur noch einen reduzierten Kernbestand (Tool, aktuellster Netz-Stand, README, Rückmeldungsdokument, zwei PDFs). Die vorherige lokale Ordnerstruktur mit nummerierten Zwischenständen (`_1…_12`), HTML-Backups sowie den Ordnern `neue_Quellen/` und `Quellen_GR/` ist **nicht** Teil dieses Repos. Abschnitt 6 (Historie) bleibt als inhaltliches Gedächtnis stehen, auch wenn die dort genannten Einzeldateien hier nicht mehr vorliegen.
 
 Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es beschreibt alle Dateien, das Tool, das Datenmodell, die Konventionen, die Historie und die offenen Aufgaben.
 
@@ -10,34 +12,29 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 
 ## 1. Schnellstart auf einem neuen Gerät
 
-1. Den **kompletten Ordner** übertragen (Git/Cloud/USB) — alles Nötige liegt darin, es gibt keine externen Abhängigkeiten.
-2. `Wissensnetz_Growth_Mindset.html` im Browser öffnen (Doppelklick genügt, läuft komplett offline).
-3. Oben **«Boards» → «Import»** wählen und den neuesten Stand laden: **`wissensnetz-Version_2_00.json`**.
-4. Arbeiten. Vor Schluss: **«Export»** klicken und als nächste Nummer speichern (`…_10.json` usw.).
+1. Repo klonen/pullen (`git clone https://github.com/piculezzas/Wissensnetz.git`) oder den Ordner übertragen — alles Nötige liegt darin, es gibt keine externen Abhängigkeiten.
+2. `index.html` im Browser öffnen (Doppelklick genügt, läuft komplett offline). Der jeweils aktuellste Netz-Stand ist direkt eingebacken, ein Import ist für den reinen Einstieg nicht nötig.
+3. Falls ein anderer/älterer Stand geladen werden soll: oben **«Boards» → «Import»** und die passende JSON-Datei wählen (aktuell: **`wissensnetz-Version_2_04.json`**).
+4. Arbeiten. Vor Schluss: **«Export»** klicken und als nächste Nummer speichern (`wissensnetz-Version_2_05.json` usw.), die Datei in den Ordner legen **und committen/pushen** — das Repo ist die geräteübergreifende Wahrheit.
 
-> ⚠️ **Wichtig:** Das Tool sichert den Arbeitsstand automatisch im Browser-Speicher (localStorage) — dieser ist aber **gerätespezifisch**. Die JSON-Stände im Ordner sind die einzige geräteübergreifende Wahrheit. Deshalb: nach jeder Session exportieren, fortlaufend nummerieren, Datei in den Ordner legen.
+> ⚠️ **Wichtig:** Das Tool sichert den Arbeitsstand automatisch im Browser-Speicher (localStorage) — dieser ist aber **gerätespezifisch**. Die JSON-Stände im Git-Repo sind die einzige geräteübergreifende Wahrheit. Deshalb: nach jeder Session exportieren, fortlaufend nummerieren, committen und pushen.
 
 ---
 
-## 2. Dateien im Ordner
+## 2. Dateien im Repo
 
 | Datei | Inhalt |
 |---|---|
-| `Wissensnetz_Growth_Mindset.html` | **Das Tool** (interaktives Board, alles inline: JS/CSS/Bilder/Literaturliste) |
-| `Wissensnetz_Growth_Mindset_backup-2026-07-17.html` | HTML-Backup **vor** Einbau des Shift-Klick-Features |
-| `Wissensnetz_Growth_Mindset_backup2-2026-07-17.html` | HTML-Backup **vor** Erweiterung der Literaturliste |
-| `Wissensnetz_Growth_Mindset_backup3-2026-07-17.html` | HTML-Backup **vor** Mehrfachauswahl + Klick-Fixes |
-| `wissensnetz-Zwischenstand_1…12.json` | Netz-Stände (Historie siehe Abschnitt 6) |
-| `wissensnetz-Version_2_00.json` | **Meilenstein = aktueller Stand** (inhaltsgleich `_12`) |
-| `Wissensnetz_Version_2_00_Gross.pdf` | Vektor-PDF des ganzen Netzes in Originalgröße (4714×5055 px) — beliebig zoombar, Text durchsuchbar |
-| `neue_Quellen/` | Von David beschaffte Literatur (Ryan & Deci 2019 Preprint, Senko & Dawson 2017 Preprint, Rezension, PHGR-Folie) |
+| `index.html` | **Das Tool** (interaktives Board, alles inline: JS/CSS/Bilder/Literaturliste), mit dem jeweils aktuellsten Netz-Stand fest eingebacken |
+| `wissensnetz-Version_2_03.json` | Vorheriger Netz-Stand (128 Knoten, 185 Kanten) |
+| `wissensnetz-Version_2_04.json` | **Aktueller Netz-Stand** (129 Knoten, 194 Kanten) — identisch mit dem in `index.html` eingebackenen Stand |
+| `Wissensnetz_Version_2_00_Gross.pdf` | Vektor-PDF des Netzes (Stand `_2_00`) in Originalgröße (4714×5055 px) — beliebig zoombar, Text durchsuchbar. ⚠️ nicht mehr inhaltsgleich mit dem aktuellen Stand, siehe Abschnitt 8 zum Neu-Erzeugen |
+| `Überarbeitete_Version_2.pdf` | Überarbeitete Version des Posters/Netzes |
 | `Welche Strategien nutzen Lehrpersonen….pdf` | Ursprüngliches Poster (1:1-Vorlage des Netzes, Stand 11.07.) |
 | `Rueckmeldung_Wissensnetz_2026-07-17.md` | Kritische Analyse + Abarbeitungs-Checkliste + Bibliotheksliste |
 | `README.md` | dieses Dokument |
-| `Quellen_GR/Schulgesetz_GR_BR421.000.pdf` | Volksschulgesetz GR (⚠️ Stand 1.8.2013 — vor Abgabe auf gr-lex.gr.ch gegenprüfen) |
-| `Quellen_GR/AVS_Weisungen_Zeugnisse_Promotion.pdf` | Weisungen zu Zeugnissen und Promotion (Stand 1.12.2025) |
-| `Quellen_GR/AVS_Handreichung_Diagnose-Foerdern-Beurteilen_2020.pdf` | LP21-GR-Umsetzungshilfe zur Beurteilung (zentral!) |
-| `Quellen_GR/GR_D_Grundlagen.pdf` | Lehrplan 21 GR, Grundlagen (Stand 15.3.2016) |
+
+**Nicht (mehr) im Repo, aber in Abschnitt 6/7 referenziert:** HTML-Backups vor einzelnen Feature-Ausbauten, die nummerierten Zwischenstände `_1…_12`, sowie die Ordner `neue_Quellen/` (Literatur-PDFs von David) und `Quellen_GR/` (Schulgesetz, AVS-Weisungen, Handreichung DFB, LP21 GR). Falls diese für die Weiterarbeit gebraucht werden, liegen sie ggf. noch auf einem anderen Gerät oder müssen aus der Cloud/dem Original-Ordner nachgezogen werden.
 
 ---
 
@@ -106,7 +103,9 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 | `_10` | S1+alt-S5 fusioniert (alt-S6 → S5 nachgerückt), SDT-Cluster (Ryan & Deci 2019), Senko-&-Dawson-Box zur Ziel-Ära, Deci-&-Ryan-Notizzettel aufgelöst |
 | `_11` | Kurzzitate der GR-Knoten mit Jahreszahlen (Schulgesetz 2012, Weisungen 2025) — nötig für die klickbare Quellen-Hervorhebung |
 | `_12` | BFLPE-Box-Zitat durch David ergänzt (Trautwein & Baeriswyl, 2007) — damit sind alle 29 Literatureinträge klickbar wirksam |
-| **`Version_2_00`** | **Meilenstein/aktuell** — inhaltsgleich `_12`, von David als Abschluss der inhaltlichen Runde benannt |
+| `Version_2_00` | Meilenstein — inhaltsgleich `_12`, von David als Abschluss der inhaltlichen Runde benannt |
+| `Version_2_03` | Zwischenstand, 31.07.2026 — 128 Knoten, 185 Kanten (Details zu den Schritten zwischen `_2_00` und `_2_03` liegen nicht in diesem Repo vor) |
+| **`Version_2_04`** | **aktuell**, 01.08.2026 — 129 Knoten, 194 Kanten. Neuer Knoten `umsafabfk` (Cluster `bw`): „Kontrollierte Subjektivität" + „Kommunikative Validierung" (Beleg: Lötscher et al., 2023, S. 98). 8 neue pinke Querverbindungen, u. a. LP21-Knoten → Synthese-Strategien S2–S4 sowie GR-Bewertungsrahmen ↔ Bezugsnorm-Box. Reine Erweiterung, nichts entfernt. |
 
 **HTML-Änderungen** (unabhängig von den JSON-Ständen): Shift-Klick-Verbindungs-Fokus inkl. `#link=`-Deep-Link und Sidebar-Hilfetext; Literaturliste erweitert um 4 amtliche Quellen (AVS-Handreichung 2020, EKUD-Weisungen 2025, Schulgesetz 2012, LP21 GR 2016) sowie Ryan & Deci (2019) und Senko & Dawson (2017) — jetzt 29 Einträge; Mehrfachauswahl in der Literaturliste (Cmd-/Shift-Klick); Klick-Fixes (Litliste vom Box-Drag ausgenommen, Litliste auch im Bearbeiten-Modus aktiv); robusteres Zitat-Matching (Ziffern in Quellennamen wie „Lehrplan 21", Klammer-Kurztitel wie „(Schulgesetz)").
 
