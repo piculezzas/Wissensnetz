@@ -248,6 +248,8 @@
   button.chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
   .edit-tools { display: none; align-items: center; gap: 8px; }
   body.edit-mode .edit-tools { display: flex; }
+  body.view-only #editToggle, body.view-only #boardsToggle,
+  body.view-only #editHintBlock, body.view-only .edit-only-text { display: none !important; }
   .edit-tools select {
     font-family: var(--font-body); font-size: .8rem; color: var(--ink);
     background: var(--paper-raised); border: 1px solid var(--line); border-radius: 8px; padding: 5px 6px;
@@ -556,11 +558,13 @@
     <strong>Cmd-/Shift-Klick in der Literaturliste</strong> → mehrere Quellen auswählen und gemeinsam im Netz anzeigen.<br />
     <strong>Esc</strong> = alles zurücksetzen + Übersicht. Klick auf leere Fläche = nur Hervorhebung aufheben.</p>
 
-    <h2>Bearbeiten</h2>
-    <p class="hint">Der Button <strong>«Bearbeiten»</strong> oben schaltet in den Bearbeitungsmodus: Klick auf eine Box öffnet den Editor (Text, Farbe, Breite, Löschen), <strong>«+ Box»</strong> erstellt neue Boxen. <strong>Neue Pfeile:</strong> Maus über eine Box — an allen vier Seiten erscheinen pinke Kreise; von dort auf die Zielbox ziehen. <strong>Pfeil anklicken</strong> = Typ ändern oder löschen; mit dem runden <strong>Anfasser in der Pfeilmitte</strong> lässt sich der Pfeil biegen, um zwischen Boxen hindurchzukommen. Der grüne Griff unten rechts ändert die Boxbreite. Alles wird automatisch gesichert — benannte Stände und JSON-Export/-Import unter <strong>«Boards»</strong>.</p>
+    <div id="editHintBlock">
+      <h2>Bearbeiten</h2>
+      <p class="hint">Der Button <strong>«Bearbeiten»</strong> oben schaltet in den Bearbeitungsmodus: Klick auf eine Box öffnet den Editor (Text, Farbe, Breite, Löschen), <strong>«+ Box»</strong> erstellt neue Boxen. <strong>Neue Pfeile:</strong> Maus über eine Box — an allen vier Seiten erscheinen pinke Kreise; von dort auf die Zielbox ziehen. <strong>Pfeil anklicken</strong> = Typ ändern oder löschen; mit dem runden <strong>Anfasser in der Pfeilmitte</strong> lässt sich der Pfeil biegen, um zwischen Boxen hindurchzukommen. Der grüne Griff unten rechts ändert die Boxbreite. Alles wird automatisch gesichert — benannte Stände und JSON-Export/-Import unter <strong>«Boards»</strong>.</p>
+    </div>
 
     <h2>Hinweis</h2>
-    <p class="hint">Ausgangslage ist die 1:1-Übernahme des Original-PDFs (unter «Boards» jederzeit wiederherstellbar). Zoomen mit den Buttons oder Cmd/Ctrl&nbsp;+&nbsp;Scrollen.</p>
+    <p class="hint">Ausgangslage ist die 1:1-Übernahme des Original-PDFs<span class="edit-only-text"> (unter «Boards» jederzeit wiederherstellbar)</span>. Zoomen mit den Buttons oder Cmd/Ctrl&nbsp;+&nbsp;Scrollen.</p>
   </aside>
 
   <div id="viewport">
@@ -700,6 +704,14 @@
 <script>
 (function(){
   "use strict";
+
+  /* Ansichtsversion ohne Bearbeitungs-/Boards-Funktionen (Link für Dritte,
+     z. B. Betreuungspersonen): "?view=1" in der URL blendet «Bearbeiten»
+     und «Boards» aus und deaktiviert das Verschieben von Boxen per Drag.
+     Kein Sicherheitsmechanismus, nur eine UI-Vereinfachung — alle
+     Anzeige-/Highlight-/Filter-Funktionen bleiben vollständig erhalten. */
+  const VIEW_ONLY = new URLSearchParams(location.search).get('view') === '1';
+  if (VIEW_ONLY) document.body.classList.add('view-only');
 
   /* ============================= DATA ============================= */
 
@@ -2117,6 +2129,7 @@
 
   const editToggle = document.getElementById('editToggle');
   editToggle.addEventListener('click', () => {
+    if (VIEW_ONLY) return;
     editMode = !editMode;
     editToggle.classList.toggle('active', editMode);
     document.body.classList.toggle('edit-mode', editMode);
@@ -2226,7 +2239,7 @@
     fitOverview(false);
   });
 
-  function openBoards() { renderBoardList(); boardsPanel.classList.add('open'); scrim.classList.add('open'); }
+  function openBoards() { if (VIEW_ONLY) return; renderBoardList(); boardsPanel.classList.add('open'); scrim.classList.add('open'); }
   function closeBoards() { boardsPanel.classList.remove('open'); if (!litPanel.classList.contains('open')) scrim.classList.remove('open'); }
   document.getElementById('boardsToggle').addEventListener('click', openBoards);
   document.getElementById('boardsClose').addEventListener('click', closeBoards);
@@ -2261,6 +2274,7 @@
       e.preventDefault();
       return;
     }
+    if (VIEW_ONLY) return;
     const nodeEl = e.target.closest('.node');
     if (!nodeEl) return;
     // Klicks auf Literatureinträge/den Bearbeiten-Button sind nie ein Drag —
