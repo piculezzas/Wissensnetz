@@ -50,7 +50,7 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 - **Esc** = alles zurücksetzen + Übersicht. **Cmd/Ctrl+Scrollen** = Zoom.
 - **Deep-Links:** `#topic=<id>`, `#chain=<id>`, `#link=<id>` (Verbindungs-Fokus), `#src=<Literatur-Index>` in der Adresszeile.
 
-**Bearbeitungsmodus** («Bearbeiten»-Button): Klick auf Box öffnet Editor (Text, Farbe/Ebene, Breite, Löschen); «+ Box» erstellt neue; Pfeile per Zug von den Randgriffen einer Box; Klick auf Pfeil → Art ändern/biegen/löschen.
+**Bearbeitungsmodus** («Bearbeiten»-Button): Klick auf Box öffnet Editor (Text, Farbe/Ebene, Breite, Löschen); «+ Box» erstellt neue; Pfeile per Zug von den Randgriffen einer Box; Klick auf Pfeil → Art ändern/biegen/löschen. **Klick auf die lavendelfarbige Literaturbox** (nicht auf einen einzelnen Eintrag) öffnet einen eigenen Editor für Literatur- und Abbildungsverzeichnis als Freitext (eine Quelle/Bildunterschrift pro Zeile) — Tippfehler, Klammern und Jahreszahlen lassen sich so direkt im Tool korrigieren, ohne den HTML-Code anzufassen.
 
 **Persistenz:** Auto-Save in localStorage; benannte Boards + JSON-Import/-Export unter «Boards».
 
@@ -59,8 +59,10 @@ Dieses Dokument macht das Projekt auf jedem Gerät nahtlos weiterbearbeitbar: Es
 ## 4. Datenmodell (JSON)
 
 ```
-{ "version": 1, "savedAt": "…", "nodes": [...], "edges": [...] }
+{ "version": 1, "savedAt": "…", "nodes": [...], "edges": [...], "references": [...], "figures": [...] }
 ```
+
+`references`/`figures` sind seit dem Literatur-Editor (siehe Abschnitt 3) Teil des Exports: einfache String-Arrays mit je einem Literatur- bzw. Abbildungseintrag pro Zeile. Ältere JSON-Stände ohne diese Felder werden beim Import automatisch mit der im Tool eingebackenen Standard-Literaturliste aufgefüllt.
 
 **Node:** `id`, `tier`, `shape`, `x`, `y`, `w`, `h`, dazu je nach Form: `label` (hex/banner/note/hand), `heading`+`text`+`list`+`cite` (rect), `img`+`caption`+`alt` (figure).
 
