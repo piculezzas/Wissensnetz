@@ -451,6 +451,8 @@
   .shape-lit li:hover { background: rgba(128,128,128,.16); }
   .shape-lit li.sel { background: var(--accent-soft); outline: 2px solid var(--accent); }
   .ref-count { font-family: var(--font-mono); font-size: .6rem; opacity: .75; margin-left: 6px; white-space: nowrap; }
+  button.lit-edit-btn { display: none; width: 100%; justify-content: center; margin-bottom: 12px; }
+  body.edit-mode button.lit-edit-btn { display: flex; }
   #litPanel li { cursor: pointer; border-radius: 6px; padding: 3px 6px; }
   #litPanel li:hover { background: var(--accent-soft); }
   #litPanel li.sel { background: var(--accent-soft); outline: 2px solid var(--accent); }
@@ -807,7 +809,8 @@
         <div class="legend-row"><span class="swatch swatch-rect-dotted"></span>Zusätzliche Literatur (nicht zentral)</div>`;
     }
     if (n.shape === 'lit') {
-      return '<h3>Literaturverzeichnis</h3><ul>' + REFERENCES.map((r, i) => `<li data-ref="${i}">${escapeHtml(r)}<span class="ref-count"></span></li>`).join('') + '</ul>' +
+      return '<button type="button" class="chip lit-edit-btn" data-action="edit-lit">✎ Text bearbeiten</button>' +
+             '<h3>Literaturverzeichnis</h3><ul>' + REFERENCES.map((r, i) => `<li data-ref="${i}">${escapeHtml(r)}<span class="ref-count"></span></li>`).join('') + '</ul>' +
              '<h3>Abbildungsverzeichnis</h3><ul>' + FIGURES.map((f, i) => `<li data-abb="${i}">${escapeHtml(f)}</li>`).join('') + '</ul>';
     }
     // detail card
@@ -1517,6 +1520,7 @@
       const hit = e.target.closest && e.target.closest('path.edge-hit');
       if (hit) { showEdgeChip(hit, e); return; }
       hideEdgeChip();
+      if (e.target.closest('.lit-edit-btn')) { openEditor('litbox', false); return; }
       const litLi = e.target.closest('.shape-lit li');
       if (litLi) { toggleSourceSelection(+litLi.dataset.ref, e.shiftKey || e.metaKey || e.ctrlKey); return; }
       const nodeEl = e.target.closest('.node');
@@ -2235,9 +2239,10 @@
     }
     const nodeEl = e.target.closest('.node');
     if (!nodeEl) return;
-    // Klicks auf Literatureinträge sind nie ein Drag — sonst schluckt ein
-    // 5px-Wackler des Trackpads den Klick und die Litbox ruckelt nur kurz.
+    // Klicks auf Literatureinträge/den Bearbeiten-Button sind nie ein Drag —
+    // sonst schluckt ein 5px-Wackler des Trackpads den Klick.
     if (e.target.closest('.shape-lit li')) return;
+    if (e.target.closest('.lit-edit-btn')) return;
     const id = nodeEl.dataset.id;
     const rec = nodesById[id];
     capturePointer(nodeEl, e);
