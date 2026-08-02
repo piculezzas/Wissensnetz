@@ -1508,7 +1508,17 @@
   function highlightTopic(hubId) {
     const key = 'topic:' + hubId;
     if (activeKey === key) { clearHighlight(); return; }
-    highlightSet(subtreeIds(hubId), { key });
+    const ids = new Set(subtreeIds(hubId));
+    // bw-bez4/bw-nu1/bw-bflpe1/bw-bflpe/bw-referenzgruppenfehler sind farblich
+    // (gelb) dem Feedback/Noten-Cluster zugeordnet, hängen im Gliederungsbaum
+    // aber unter der Bewertung (räumlich dort platziert). Beim Hervorheben von
+    // "Feedback" sollen sie trotzdem mit aufleuchten. Nur für diesen einen Hub
+    // gemacht, weil z. B. gr-vsg-hub/gr-lp21-hub dieselbe Cluster-Farbe teilen,
+    // dort aber bewusst getrennt bleiben sollen.
+    if (hubId === 'sec-feedback') {
+      curNodes.forEach(n => { if (n.cluster === 'fb') ids.add(n.id); });
+    }
+    highlightSet(Array.from(ids), { key });
   }
 
   function highlightChain(id) {
@@ -2444,8 +2454,18 @@
       const id = btn.dataset.jump;
       const rec = nodesById[id];
       if (!rec) return;
-      if (!CONTEXT_IDS.has(id) && childrenOf[id] && childrenOf[id].length) highlightTopic(id);
-      else scrollToNode(rec);
+      if (!CONTEXT_IDS.has(id) && childrenOf[id] && childrenOf[id].length) {
+        highlightTopic(id);
+      } else if (CONTEXT_IDS.has(id)) {
+        // Kontext-Boxen (Leitfrage-Banner, Literaturverzeichnis) haben keinen
+        // Gliederungs-Teilbaum — trotzdem sich selbst hervorheben + hinzoomen,
+        // statt beim Sprung stillschweigend ohne jede Markierung zu bleiben.
+        const key = 'jump:' + id;
+        if (activeKey === key) clearHighlight();
+        else highlightSet([id], { key });
+      } else {
+        scrollToNode(rec);
+      }
     });
   });
 
